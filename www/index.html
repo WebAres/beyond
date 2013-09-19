@@ -1,0 +1,565 @@
+﻿<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>title</title>
+
+    <link href='http://fonts.googleapis.com/css?family=Marvel' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script src="js/modernizr-2.6.2.min.js"></script>
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/iscroll-min.js"></script>
+    <script src="js/jquery.main.js"></script>
+
+    <!--[if lte IE 9]>
+        <script src="js/jquery.placeholder.js"></script>
+        <link rel="stylesheet" href="css/pie.css" />
+    <![endif]-->
+    <!--[if lte IE 8]>
+        <link rel="stylesheet" href="css/main.ie8.css" />
+    <![endif]-->
+</head>
+<body>
+
+    <!-- site -->
+    <div class="site">
+
+        <!-- header -->
+        <header class="header">
+
+            <!-- header__layout -->
+            <div class="header__layout">
+
+                <!-- logo -->
+                <h1 class="logo"><img src="img/logo.png" width="101" height="94" alt="Beyond it"></h1>
+                <!-- /logo -->
+
+                <!-- menu -->
+                <nav class="menu">
+                    <div data-popup="statement">MAKE A STATEMENT</div>
+                    <div data-popup="transform">TRANSFORM LIVES.</div>
+                    <div data-popup="about">WHAT IS BEYOND “it”?</div>
+                </nav>
+                <!-- /menu -->
+
+                <!-- header__social -->
+                <dl class="header__social">
+                    <dt>Connect:</dt>
+                    <dd class="header__social-t">
+                        <a href="https://twitter.com/twitter" class="twitter-follow-button" data-show-count="false">Follow</a>
+                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                    </dd>
+                    <dd class="header__social-f">
+                        <div id="fb-root"></div>
+                        <script>(function(d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0];
+                                if (d.getElementById(id)) return;
+                                js = d.createElement(s); js.id = id;
+                                js.src = "//connect.facebook.net/en_EN/all.js#xfbml=1";
+                                fjs.parentNode.insertBefore(js, fjs);
+                            }(document, 'script', 'facebook-jssdk'));
+                            $( '.header__social-f' ).append( '<div class="fb-like" data-href="' + document.location.href + '" data-width="450" data-layout="button_count" data-show-faces="false" data-send="false"></div>' );
+                        </script>
+
+                    </dd>
+                </dl>
+                <!-- /header__social -->
+
+                <!-- popup -->
+                <div class="popup popup__statement">
+                    <div class="popup__close" title="close"></div>
+
+                    <!-- statement -->
+                    <dl class="statement">
+                        <dt>
+                            <h2>CREATE</h2>
+                            <span>Create your statement.</span>
+                        </dt>
+                        <dd></dd>
+                        <dt>
+                            <h2>DONATE</h2>
+                            <span>Make a donation to transform lives.</span>
+                        </dt>
+                        <dd></dd>
+                        <dt>
+                            <h2>SHARE</h2>
+                            <span>Invite your friends to move BEYOND “it”</span>
+                        </dt>
+                        <dd></dd>
+                    </dl>
+                    <!-- /statement -->
+
+                </div>
+                <!-- /popup -->
+
+                <!-- popup -->
+                <div class="popup popup__transform">
+                    <div class="popup__close" title="close"></div>
+                </div>
+                <!-- /popup -->
+
+                <!-- popup -->
+                <div class="popup popup__about">
+                    <div class="popup__close" title="close"></div>
+                    <div class="about">
+                        <a href="#" class="about__btn statement">MAKE A STATEMENT.</a>
+                        <a href="#" class="about__btn transform">TRANSFORM LIVES.</a>
+
+                        <!-- tabs -->
+                        <dl class="tabs">
+                            <dt class="active">WHAT ARE WE?</dt>
+                            <dd>
+                                <p>BEYOND “IT” IS A GLOBAL PLATFORM OF SUPPORT FOR PEOPLE AND INITIATIVES TO INVITE
+                                    OUR CULTURE TO MOVE BEYOND THE LABELS & STEREOTYPES THAT LIMIT US FROM REACHING
+                                    OUR FULL POTENTIAL.</p>
+                            </dd>
+                            <dt>OUR MISSION</dt>
+                            <dd>
+                                <p>IT IS THE MISSION OF BEYOND “it” TO USE DESIGN, PRODUCTS, AND PARTNERSHIPS TO
+                                    GENERATE SUPPORT AND AWARENESS FOR INITIATIVES THAT MOVE THE WORLD BEYOND “it”.</p>
+                            </dd>
+                            <dt>HOW IT WORKS?</dt>
+                            <dd>
+                                <p>BEYOND “it” products fuel a philanthropic platform, powered by the people, to raise
+                                    money for BEYOND “it” partnered initiatives.</p>
+                                <p>THE STATEMENT OF SUPPORT. <a href="#">'MAKE A STATEMENT'</a></p>
+                                <div class="add-info">
+                                    <p>50% is a charitable gift that will be donated directly to your chosen intiative.</p>
+                                    <p>50% is a non-tax deductible contribution that will go towards
+                                        <a href="#">BEYOND “it” and its mission.</a></p>
+                                </div>
+                            </dd>
+                        </dl>
+                        <!-- /tabs -->
+
+                    </div>
+                </div>
+                <!-- /popup -->
+
+            </div>
+            <!-- /header__layout -->
+
+        </header>
+        <!-- /header -->
+
+        <!-- site__content -->
+        <div class="site__content">
+
+            <!-- gallery -->
+            <div class="gallery">
+                <dl class="gallery__filter">
+                    <dt>FILTER</dt>
+                    <dd class="gallery__filter-item gallery__check"></dd>
+                    <dd class="gallery__filter-item gallery__stared"></dd>
+                    <dd class="gallery__filter-item gallery__no-check active"></dd>
+                </dl>
+                <div  class="gallery__wrap" id="gallery">
+                    <ul class="gallery__list">
+                        <li class="gallery__item checked">
+                            <div>
+                                <img src="pic/1.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#">Tim D.</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item stared">
+                            <span class="star">
+                                IN SPORTSOF ROBBIE Rocers
+                            </span>
+                            <div>
+                                <img src="pic/2.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#" class="inst">Tim D.</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item stared">
+                            <span class="star">
+                                IN SPORTSOF ROBBIE Rocers
+                            </span>
+                            <div>
+                                <img src="pic/3.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#" class="tweet">@clearlynaomi</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item">
+                            <div>
+                                <img src="pic/4.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#" class="tweet">@clearlynaomi</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item">
+                            <div>
+                                <img src="pic/1.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#">Tim D.</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item stared">
+                            <span class="star">
+                                IN SPORTSOF ROBBIE Rocers
+                            </span>
+                            <div>
+                                <img src="pic/2.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#" class="inst">Tim D.</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item">
+                            <div>
+                                <img src="pic/3.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#" class="tweet">@clearlynaomi</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item checked">
+                            <div>
+                                <img src="pic/4.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#" class="tweet">@clearlynaomi</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item stared">
+                            <span class="star">
+                                IN SPORTSOF ROBBIE Rocers
+                            </span>
+                            <div>
+                                <img src="pic/1.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#">Tim D.</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item">
+                            <div>
+                                <img src="pic/2.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#" class="inst">Tim D.</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item">
+                            <div>
+                                <img src="pic/3.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#" class="tweet">@clearlynaomi</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item stared">
+                            <span class="star">
+                                IN SPORTSOF ROBBIE Rocers
+                            </span>
+                            <div>
+                                <img src="pic/4.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#" class="tweet">@clearlynaomi</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item checked">
+                            <div>
+                                <img src="pic/1.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#">Tim D.</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item">
+                            <div>
+                                <img src="pic/2.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#" class="inst">Tim D.</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item stared">
+                            <span class="star">
+                                IN SPORTSOF ROBBIE Rocers
+                            </span>
+                            <div>
+                                <img src="pic/3.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#" class="tweet">@clearlynaomi</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item">
+                            <div>
+                                <img src="pic/4.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#" class="tweet">@clearlynaomi</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item checked">
+                            <div>
+                                <img src="pic/1.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#">Tim D.</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item stared">
+                            <span class="star">
+                                IN SPORTSOF ROBBIE Rocers
+                            </span>
+                            <div>
+                                <img src="pic/2.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#" class="inst">Tim D.</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item">
+                            <div>
+                                <img src="pic/3.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#" class="tweet">@clearlynaomi</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item checked">
+                            <div>
+                                <img src="pic/4.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#" class="tweet">@clearlynaomi</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item stared">
+                            <span class="star">
+                                IN SPORTSOF ROBBIE Rocers
+                            </span>
+                            <div>
+                                <img src="pic/1.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#">Tim D.</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item checked">
+                            <div>
+                                <img src="pic/2.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#" class="inst">Tim D.</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item">
+                            <div>
+                                <img src="pic/3.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#" class="tweet">@clearlynaomi</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item">
+                            <div>
+                                <img src="pic/4.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#" class="tweet">@clearlynaomi</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item checked">
+                            <div>
+                                <img src="pic/1.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#">Tim D.</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item stared">
+                            <span class="star">
+                                IN SPORTSOF ROBBIE Rocers
+                            </span>
+                            <div>
+                                <img src="pic/2.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#" class="inst">Tim D.</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item">
+                            <div>
+                                <img src="pic/3.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#" class="tweet">@clearlynaomi</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item checked">
+                            <div>
+                                <img src="pic/4.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#" class="tweet">@clearlynaomi</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item">
+                            <div>
+                                <img src="pic/1.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#">Tim D.</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item checked">
+                            <div>
+                                <img src="pic/2.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#" class="inst">Tim D.</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item">
+                            <div>
+                                <img src="pic/3.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#" class="tweet">@clearlynaomi</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item stared">
+                            <span class="star">
+                                IN SPORTSOF ROBBIE Rocers
+                            </span>
+                            <div>
+                                <img src="pic/4.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#" class="tweet">@clearlynaomi</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item checked">
+                            <div>
+                                <img src="pic/1.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#">Tim D.</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item">
+                            <div>
+                                <img src="pic/2.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#" class="inst">Tim D.</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item stared">
+                            <span class="star">
+                                IN SPORTSOF ROBBIE Rocers
+                            </span>
+                            <div>
+                                <img src="pic/3.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#" class="tweet">@clearlynaomi</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                        <li class="gallery__item checked">
+                            <div>
+                                <img src="pic/4.png" width="313" height="281" alt="">
+                                <span>I’m proud to be a woman, but that should never keep me from my dreams.</span>
+                            </div>
+                            <span>
+                                <a href="#" class="tweet">@clearlynaomi</a>
+                                <a href="#">WWW.BEYONDit.ORG</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /gallery -->
+
+        </div>
+        <!-- /site__content -->
+
+    </div>
+    <!-- /site -->
+
+</body>
+</html>

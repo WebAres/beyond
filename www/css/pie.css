@@ -1,0 +1,6 @@
+.menu > div,
+.gallery__filter,
+.star {
+    behavior: url(css/pie.htc);
+    zoom: 1;
+}

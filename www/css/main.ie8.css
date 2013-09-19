@@ -1,0 +1,16 @@
+/* css for ltie8 */
+.gallery__wrap {
+    overflow: auto;
+}
+.gallery__filter dd { filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50); }
+.gallery__filter dd.active, .gallery__filter dd:hover, .gallery__item > div:hover > span { filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100); }
+.gallery__item > div > span{ filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); }
+.gallery__item > div > span {
+    background: url("../img/black0.8.png");
+}
+.gallery__item > div {
+    z-index: -1;
+}
+.popup__transform{
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#9e9e9e',GradientType=1 );
+}
