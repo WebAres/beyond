@@ -146,6 +146,15 @@ a:visited {
 }
 /* --------------- /Style to null --------------- */
 
+/* --------------- fonts --------------- */
+@font-face {
+    font-family: "komikax";
+    src: url("../font/komikax.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+/* --------------- /fonts --------------- */
+
 /* --------------- site --------------- */
 .site {
     min-height: 100%;
@@ -657,6 +666,94 @@ a:visited {
 
 /* --------------- statement --------------- */
 .statement {
-
+    counter-reset: list;
+    padding-top: 10px;
+}
+.statement > dt {
+    counter-increment: list;
+    color: #939393;
+    display: inline-block;
+    vertical-align: top;
+    min-width: 219px;
+    margin-right: 36px;
+}
+.statement > dt:first-child {
+    margin-left: 105px;
+}
+.statement > .statement__selected {
+    color: #000;
+}
+.statement > dt h2 {
+    font-size: 30px;
+    font-weight: normal;
+    padding-left: 3px;
+    margin-bottom: 4px;
+}
+.statement > dt h2:before {
+    content: counter(list) ". ";
+}
+.statement > dt span {
+    font-size: 15px;
+    display: block;
+    border-top: 2px solid #000;
+    padding-top: 5px;
+    font-family: 'Abel', sans-serif;
+    display: none;
+}
+.statement > .statement__selected span {
+    display: block;
+}
+.statement > dd{
+    display: none;
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 76px;
+    bottom: 0;
+    border-top: 2px solid #939393;
+    counter-reset: list2;
+}
+.statement > dt:first-child + dd {
+    display: block;
+}
+.statement__create > div {
+    display: inline-block;
+    vertical-align: top;
+}
+.statement__create > div:first-child {
+    padding: 7px 0 0 50px;
+}
+.statement__create-items {
+    counter-increment: list2;
+}
+.statement__create-items h3{
+    color: #000;
+    font-size: 27px;
+    font-weight: normal;
+    position: relative;
+}
+.statement__create-items h3:before {
+    content: counter( list2 );
+    display: inline-block;
+    margin: 2px 3px 0 0;
+    vertical-align: top;
+    width: 24px;
+    font-size: 15px;
+    height: 24px;
+    border-radius: 24px;
+    background: #000;
+    color: #fff;
+    font-family: "komikax";
+    line-height: 21px;
+    text-align: center;
+}
+.statement__create-items h3:after {
+    content: '';
+    background: url("../img/statement__create-items.png");
+    width: 34px;
+    height: 27px;
+    position: absolute;
+    top: 1px;
+    left: -45px;
 }
 /* --------------- /statement --------------- */
