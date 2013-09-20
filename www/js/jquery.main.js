@@ -121,6 +121,7 @@ var Popup =  function(){
     this.animationSpeed = 300;
     this.btnClose = $( '.popup__close' );
     this.aboutBtn = $( '.about__btn' );
+    this.ie8 = ( $.browser.msie && ( $.browser.version < 9 ) );
 
     this.init();
 };
@@ -166,9 +167,8 @@ Popup.prototype = {
                     curIndex = curBtn.index();
 
                 if ( self.ie8 ){
-                    alert( curIndex )
-                    activeIndex = activeIndex-1;
-                    curIndex = curIndex - 1;
+                    activeIndex = ( activeIndex / 2 ) - 0.5;
+                    curIndex = ( curIndex / 2 ) - 0.5;
                 }
 
                 if ( curBtn.hasClass( 'active' ) ){

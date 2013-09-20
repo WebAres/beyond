@@ -11,6 +11,4 @@
 .gallery__item > div {
     z-index: -1;
 }
-.popup__transform{
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#9e9e9e',GradientType=1 );
-}
+
