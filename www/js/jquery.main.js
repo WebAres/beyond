@@ -276,7 +276,11 @@ var Statement = function(){
     this.elems = {
         statementPhotos: this.obj.find( '.statement__photo li' ),
         statementLogo: this.obj.find( '.statement__logo li' ),
-        statementNameSocial: this.obj.find( '.statement__name li' )
+        statementNameSocial: this.obj.find( '.statement__name li' ),
+        createNext: this.obj.find( '.statement__next' ),
+        content: this.obj.find( '> dd' ),
+        titles: this.obj.find( '> dt' ),
+        donateBack: this.obj.find( '.statement__donate-back' )
     };
 
     this.init();
@@ -324,6 +328,48 @@ Statement.prototype = {
                         }
                     }
                 } );
+                elems.createNext.on( {
+                    'click': function(){
+                        var curBlock = elems.content.eq( 0 ),
+                            newBlock = elems.content.eq( 1 );
+
+                        self.core.slideNext( curBlock, newBlock );
+                        $( '.statement__selected' ).removeClass( 'statement__selected' );
+                        elems.titles.eq( 1 ).addClass( 'statement__selected' );
+                    }
+                } );
+                elems.donateBack.on( {
+                    'click': function(){
+                        var curBlock = elems.content.eq( 1 ),
+                            newBlock = elems.content.eq( 0 );
+
+                        self.core.slideBack( curBlock, newBlock );
+                        $( '.statement__selected' ).removeClass( 'statement__selected' );
+                        elems.titles.eq( 0 ).addClass( 'statement__selected' );
+                    }
+                } );
+            },
+            slideBack: function( curBlock, newBlock ){
+                newBlock.css( {
+                    left: -1011
+                } );
+                curBlock.animate( {
+                    left: 1011
+                }, 500, 'easeInOutQuint' );
+                newBlock.animate( {
+                    left: 10
+                }, 500, 'easeInOutQuint' );
+            },
+            slideNext: function( curBlock, newBlock ){
+                newBlock.css( {
+                    left: 1011
+                } );
+                curBlock.animate( {
+                    left: -1011
+                }, 500, 'easeInOutQuint' );
+                newBlock.animate( {
+                    left: 10
+                }, 500, 'easeInOutQuint' );
             }
         };
     }

@@ -474,6 +474,7 @@ a:visited {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     display: none;
+    overflow: hidden;
 }
 .popup__about {
     background: url("../img/popup.png") no-repeat 0 0;
@@ -704,17 +705,17 @@ a:visited {
     display: block;
 }
 .statement > dd{
-    display: none;
+    display: block;
     position: absolute;
-    left: 10px;
-    right: 10px;
+    width: 981px;
+    left: -10000px;
     top: 76px;
     bottom: 0;
     border-top: 2px solid #939393;
     counter-reset: list2;
 }
 .statement > dt:first-child + dd {
-    display: block;
+    left: 10px;
 }
 .statement__create > div {
     display: inline-block;
@@ -1164,5 +1165,14 @@ a:visited {
 }
 .statement__just-transform:hover {
     text-decoration: none;
+}
+.statement__donate-back {
+    background: url("../img/back.png");
+    width: 28px;
+    height: 25px;
+    position: absolute;
+    top: -35px;
+    left: 21px;
+    cursor: pointer;
 }
 /* --------------- /statement --------------- */
