@@ -74,7 +74,7 @@
                     <!-- statement -->
                     <dl class="statement">
                         <dt class="statement__selected">
-                            <h2>CREATE</h2>
+                            <div>CREATE</div>
                             <span>Create your statement.</span>
                         </dt>
 
@@ -84,15 +84,35 @@
 
                                 <!-- statement__create-items -->
                                 <div class="statement__create-items">
-                                    <h3>CHOOSE YOUR BACKGROUND</h3>
+                                    <h3 class="checked">CHOOSE YOUR BACKGROUND</h3>
 
                                     <!-- tabs -->
                                     <dl class="tabs">
                                         <dt class="active"><span>Your Image</span></dt>
                                         <dd>
+
+                                            <!-- statement__photo-load -->
+                                            <div class="statement__photo-load">
+                                                <button class="upload">UPLOAD</button>
+                                                <button class="upload-fasebook">IMPORT FROM</button>
+                                                <button class="upload-tweeter">IMPORT FROM </button>
+                                            </div>
+                                            <!-- /statement__photo-load -->
+
                                         </dd>
                                         <dt><span>Our Image</span></dt>
                                         <dd>
+
+                                            <!-- statement__photo -->
+                                            <ul class="statement__photo">
+                                                <li><img src="pic/statement__photo1.png" alt=""></li>
+                                                <li><img src="pic/statement__photo2.png" alt=""></li>
+                                                <li><img src="pic/statement__photo3.png" alt=""></li>
+                                                <li><img src="pic/statement__photo4.png" alt=""></li>
+                                                <li><img src="pic/statement__photo5.png" alt=""></li>
+                                            </ul>
+                                            <!-- /statement__photo -->
+
                                         </dd>
                                     </dl>
                                     <!-- /tabs -->
@@ -102,15 +122,30 @@
 
                                 <!-- statement__create-items -->
                                 <div class="statement__create-items">
-                                    <h3> CHOOSE YOUR STATEMENT</h3>
+                                    <h3 class="checked">CHOOSE YOUR STATEMENT</h3>
 
                                     <!-- tabs -->
                                     <dl class="tabs">
-                                        <dt class="active"><span>Your Image</span></dt>
+                                        <dt class="active"><span>Statement</span></dt>
                                         <dd>
+                                            <div class="statement__info">
+                                                <input type="text" id="statement__label" placeholder="Label or stereotype you are beyond?">
+                                                <input type="text" id="statement__identify" placeholder="How do you identify yourself?">
+                                            </div>
                                         </dd>
-                                        <dt><span>Our Image</span></dt>
+                                        <dt><span>Logo</span></dt>
                                         <dd>
+
+                                            <!-- statement__logo -->
+                                            <ul class="statement__logo">
+                                                <li><img src="pic/statement__logo1.png" alt=""></li>
+                                                <li><img src="pic/statement__logo2.png" alt=""></li>
+                                                <li><img src="pic/statement__logo3.png" alt=""></li>
+                                                <li><img src="pic/statement__logo4.png" alt=""></li>
+                                                <li><img src="pic/statement__logo5.png" alt=""></li>
+                                            </ul>
+                                            <!-- /statement__logo -->
+
                                         </dd>
                                     </dl>
                                     <!-- /tabs -->
@@ -120,28 +155,49 @@
 
                                 <!-- statement__create-items -->
                                 <div class="statement__create-items">
-                                    <h3>YOUR NAME OR @USERNAME</h3>
+                                    <h3 class="checked">YOUR NAME OR @USERNAME</h3>
+                                    <div class="statement__name">
+                                        <ul>
+                                            <li class="statement__name-none active"></li>
+                                            <li class="statement__name-tweeter"></li>
+                                            <li class="statement__name-instagram"></li>
+                                        </ul>
+                                        <input type="text" id="statement__name">
+                                    </div>
                                 </div>
                                 <!-- /statement__create-items -->
 
                                 <!-- statement__create-items -->
                                 <div class="statement__create-items">
                                     <h3>THE STORY BEHIND YOUR SUPPORT?</h3>
+                                    <textarea class="statement__story" id="statement__story" placeholder="Your story goes here..."></textarea>
                                 </div>
+                            </div>
+                            <div>
+                                <p>PREVIEW (WATERMARK WILL BE REMOVED)</p>
+                                <div class="statement__preview">
+                                    <img src="pic/statement__preview.jpg" alt="">
+                                </div>
+                                <button class="statement__next">NEXT</button>
+                                <a href="#"  class="statement__just-transform">I’d rather not make a statement, I just want to transform lives.</a>
                             </div>
                         </dd>
                         <!-- statement__create -->
 
                         <dt>
-                            <h2>DONATE</h2>
+                            <div>DONATE</div>
                             <span>Make a donation to transform lives.</span>
                         </dt>
+
                         <dd></dd>
+
                         <dt>
-                            <h2>SHARE</h2>
+                            <div>SHARE</div>
                             <span>Invite your friends to move BEYOND “it”</span>
                         </dt>
-                        <dd></dd>
+                        <dd>
+
+                        </dd>
                     </dl>
                     <!-- /statement -->
 

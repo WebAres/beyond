@@ -5,6 +5,7 @@ $( function(){
     $( '.tabs' ).each( function(){
         new Tabs( $( this ) );
     } );
+    new Statement();
 } );
 
 $( window ).load( function(){
@@ -265,6 +266,64 @@ Tabs.prototype = {
                 elems.content.eq( activeIndex).stop( true, false ).fadeOut( 300 );
                 elems.content.eq( item.index() / 2 ).stop( true, false ).fadeIn( 300 );
 
+            }
+        };
+    }
+};
+
+var Statement = function(){
+    this.obj = $( '.statement' );
+    this.elems = {
+        statementPhotos: this.obj.find( '.statement__photo li' ),
+        statementLogo: this.obj.find( '.statement__logo li' ),
+        statementNameSocial: this.obj.find( '.statement__name li' )
+    };
+
+    this.init();
+};
+Statement.prototype = {
+    init: function(){
+        var self = this;
+
+        self.core = self.core();
+        self.core.controls();
+    },
+    core: function(){
+        var self = this,
+            elems = self.elems;
+
+        return {
+            controls: function(){
+                elems.statementPhotos.on( {
+                    'click': function(){
+                        var curItem = $( this );
+
+                        if( !curItem.hasClass( 'active' ) ) {
+                            elems.statementPhotos.removeClass( 'active' );
+                            curItem.addClass( 'active' );
+                        }
+                    }
+                } );
+                elems.statementLogo.on( {
+                    'click': function(){
+                        var curItem = $( this );
+
+                        if( !curItem.hasClass( 'active' ) ) {
+                            elems.statementLogo.removeClass( 'active' );
+                            curItem.addClass( 'active' );
+                        }
+                    }
+                } );
+                elems.statementNameSocial.on( {
+                    'click': function(){
+                        var curItem = $( this );
+
+                        if( !curItem.hasClass( 'active' ) ) {
+                            elems.statementNameSocial.removeClass( 'active' );
+                            curItem.addClass( 'active' );
+                        }
+                    }
+                } );
             }
         };
     }
