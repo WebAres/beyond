@@ -6,10 +6,13 @@
 
     <link href='http://fonts.googleapis.com/css?family=Marvel' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Nothing+You+Could+Do' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/main.css" />
 
     <script src="js/modernizr-2.6.2.min.js"></script>
     <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.checkbox.js"></script>
+    <script src="js/jquery.select.js"></script>
     <script src="js/iscroll-min.js"></script>
     <script src="js/jquery.main.js"></script>
 
@@ -192,6 +195,834 @@
                         <dd class="statement__donate">
                             <div>
                                 <h2>CHOOSE YOUR INITIATIVE TO SUPPORT</h2>
+                                <!-- tabs -->
+                                <dl class="tabs">
+                                    <dt class="active"><span>homophobia</span></dt>
+                                    <dd>
+                                        <span>Please select the inatitve that you’d like to support.</span>
+                                        <div>
+                                            <input type="checkbox" class="niceCheck" id="ch1">
+                                            <div class="label">
+                                                <div>
+                                                    THE TREVOR PROJECT
+                                                    <div class="tooltip">
+                                                        <div>
+                                                            <div class="tooltip__close" title="close"></div>
+                                                            <img src="pic/tooltip-logo.png" alt="">
+                                                            <ul class="tooltip__social">
+                                                                <li class="tooltip__social-t">
+                                                                    <a href="https://twitter.com/TrevorProject" class="twitter-follow-button" data-show-count="false">Follow @TrevorProject</a>
+                                                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                                                                </li>
+                                                                <li class="tooltip__social-f">
+                                                                    <div id="fb-root18"></div>
+                                                                    <script>(function(d, s, id) {
+                                                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                                                        if (d.getElementById(id)) return;
+                                                                        js = d.createElement(s); js.id = id;
+                                                                        js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
+                                                                        fjs.parentNode.insertBefore(js, fjs);
+                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                                                    <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
+                                                                </li>
+                                                            </ul>
+                                                            <p>The Trevor Project is the leading national organization
+                                                                providing crisis intervention and suicide prevention
+                                                                services to lesbian, gay, bisexual, transgender.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span>The Trevor Project is the leading national organization providing
+                                                    crisis intervention and suicide prevention services to lesbian, gay,
+                                                    bisexual, transgender, and questioning youth.</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="niceCheck" id="ch2">
+                                            <div class="label">
+                                                <div>
+                                                    NOH8
+                                                    <div class="tooltip">
+                                                        <div>
+                                                            <div class="tooltip__close" title="close"></div>
+                                                            <img src="pic/tooltip-logo.png" alt="">
+                                                            <ul class="tooltip__social">
+                                                                <li class="tooltip__social-t">
+                                                                    <a href="https://twitter.com/TrevorProject" class="twitter-follow-button" data-show-count="false">Follow @TrevorProject</a>
+                                                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                                                                </li>
+                                                                <li class="tooltip__social-f">
+                                                                    <div id="fb-root19"></div>
+                                                                    <script>(function(d, s, id) {
+                                                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                                                        if (d.getElementById(id)) return;
+                                                                        js = d.createElement(s); js.id = id;
+                                                                        js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
+                                                                        fjs.parentNode.insertBefore(js, fjs);
+                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                                                    <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
+                                                                </li>
+                                                            </ul>
+                                                            <p>The Trevor Project is the leading national organization
+                                                                providing crisis intervention and suicide prevention
+                                                                services to lesbian, gay, bisexual, transgender.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span>The NOH8 Campaign is a charitable organization whose mission is to
+                                                    promote marriage, gender and human... equality through education,
+                                                    advocacy, social media, and visual protest.and suicide prevention
+                                                    services to lesbian, gay, bisexual, transgender, and questioning
+                                                    youth.</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="niceCheck" id="ch3">
+                                            <div class="label">
+                                                <div>
+                                                    GLSEN
+                                                    <div class="tooltip">
+                                                        <div>
+                                                            <div class="tooltip__close" title="close"></div>
+                                                            <img src="pic/tooltip-logo.png" alt="">
+                                                            <ul class="tooltip__social">
+                                                                <li class="tooltip__social-t">
+                                                                    <a href="https://twitter.com/TrevorProject" class="twitter-follow-button" data-show-count="false">Follow @TrevorProject</a>
+                                                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                                                                </li>
+                                                                <li class="tooltip__social-f">
+                                                                    <div id="fb-root17"></div>
+                                                                    <script>(function(d, s, id) {
+                                                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                                                        if (d.getElementById(id)) return;
+                                                                        js = d.createElement(s); js.id = id;
+                                                                        js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
+                                                                        fjs.parentNode.insertBefore(js, fjs);
+                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                                                    <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
+                                                                </li>
+                                                            </ul>
+                                                            <p>The Trevor Project is the leading national organization
+                                                                providing crisis intervention and suicide prevention
+                                                                services to lesbian, gay, bisexual, transgender.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span>To safeguard and advance the civil rights of lesbians, gay men, bi
+                                                    transgender people and those with...and suicide prevention services to
+                                                    lesbian, gay, bisexual, transgender, and questioning youth.</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="niceCheck" id="ch4">
+                                            <div class="label">
+                                                <div>
+                                                    YOU CAN PLAY
+                                                    <div class="tooltip">
+                                                        <div>
+                                                            <div class="tooltip__close" title="close"></div>
+                                                            <img src="pic/tooltip-logo.png" alt="">
+                                                            <ul class="tooltip__social">
+                                                                <li class="tooltip__social-t">
+                                                                    <a href="https://twitter.com/TrevorProject" class="twitter-follow-button" data-show-count="false">Follow @TrevorProject</a>
+                                                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                                                                </li>
+                                                                <li class="tooltip__social-f">
+                                                                    <div id="fb-root16"></div>
+                                                                    <script>(function(d, s, id) {
+                                                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                                                        if (d.getElementById(id)) return;
+                                                                        js = d.createElement(s); js.id = id;
+                                                                        js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
+                                                                        fjs.parentNode.insertBefore(js, fjs);
+                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                                                    <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
+                                                                </li>
+                                                            </ul>
+                                                            <p>The Trevor Project is the leading national organization
+                                                                providing crisis intervention and suicide prevention
+                                                                services to lesbian, gay, bisexual, transgender.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span>You Can Play is dedicated to ensuring equality, respect and safety
+                                                    for all athletes without regard to sexual orientation.and suicide
+                                                    prevention services to lesbian, gay, bisexual, transgender, and
+                                                    questioning youth.</span>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                    <dt><span>racsim</span></dt>
+                                    <dd>
+                                        <span>Please select the inatitve that you’d like to support.</span>
+                                        <div>
+                                            <input type="checkbox" class="niceCheck" id="ch5">
+                                            <div class="label">
+                                                <div>
+                                                    THE TREVOR PROJECT
+                                                    <div class="tooltip">
+                                                        <div>
+                                                            <div class="tooltip__close" title="close"></div>
+                                                            <img src="pic/tooltip-logo.png" alt="">
+                                                            <ul class="tooltip__social">
+                                                                <li class="tooltip__social-t">
+                                                                    <a href="https://twitter.com/TrevorProject" class="twitter-follow-button" data-show-count="false">Follow @TrevorProject</a>
+                                                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                                                                </li>
+                                                                <li class="tooltip__social-f">
+                                                                    <div id="fb-root15"></div>
+                                                                    <script>(function(d, s, id) {
+                                                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                                                        if (d.getElementById(id)) return;
+                                                                        js = d.createElement(s); js.id = id;
+                                                                        js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
+                                                                        fjs.parentNode.insertBefore(js, fjs);
+                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                                                    <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
+                                                                </li>
+                                                            </ul>
+                                                            <p>The Trevor Project is the leading national organization
+                                                                providing crisis intervention and suicide prevention
+                                                                services to lesbian, gay, bisexual, transgender.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span>The Trevor Project is the leading national organization providing
+                                                    crisis intervention and suicide prevention services to lesbian, gay,
+                                                    bisexual, transgender, and questioning youth.</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="niceCheck" id="ch6">
+                                            <div class="label">
+                                                <div>
+                                                    NOH8
+                                                    <div class="tooltip">
+                                                        <div>
+                                                            <div class="tooltip__close" title="close"></div>
+                                                            <img src="pic/tooltip-logo.png" alt="">
+                                                            <ul class="tooltip__social">
+                                                                <li class="tooltip__social-t">
+                                                                    <a href="https://twitter.com/TrevorProject" class="twitter-follow-button" data-show-count="false">Follow @TrevorProject</a>
+                                                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                                                                </li>
+                                                                <li class="tooltip__social-f">
+                                                                    <div id="fb-root14"></div>
+                                                                    <script>(function(d, s, id) {
+                                                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                                                        if (d.getElementById(id)) return;
+                                                                        js = d.createElement(s); js.id = id;
+                                                                        js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
+                                                                        fjs.parentNode.insertBefore(js, fjs);
+                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                                                    <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
+                                                                </li>
+                                                            </ul>
+                                                            <p>The Trevor Project is the leading national organization
+                                                                providing crisis intervention and suicide prevention
+                                                                services to lesbian, gay, bisexual, transgender.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span>The NOH8 Campaign is a charitable organization whose mission is to
+                                                    promote marriage, gender and human... equality through education,
+                                                    advocacy, social media, and visual protest.and suicide prevention
+                                                    services to lesbian, gay, bisexual, transgender, and questioning
+                                                    youth.</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="niceCheck" id="ch7">
+                                            <div class="label">
+                                                <div>
+                                                    GLSEN
+                                                    <div class="tooltip">
+                                                        <div>
+                                                            <div class="tooltip__close" title="close"></div>
+                                                            <img src="pic/tooltip-logo.png" alt="">
+                                                            <ul class="tooltip__social">
+                                                                <li class="tooltip__social-t">
+                                                                    <a href="https://twitter.com/TrevorProject" class="twitter-follow-button" data-show-count="false">Follow @TrevorProject</a>
+                                                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                                                                </li>
+                                                                <li class="tooltip__social-f">
+                                                                    <div id="fb-root13"></div>
+                                                                    <script>(function(d, s, id) {
+                                                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                                                        if (d.getElementById(id)) return;
+                                                                        js = d.createElement(s); js.id = id;
+                                                                        js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
+                                                                        fjs.parentNode.insertBefore(js, fjs);
+                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                                                    <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
+                                                                </li>
+                                                            </ul>
+                                                            <p>The Trevor Project is the leading national organization
+                                                                providing crisis intervention and suicide prevention
+                                                                services to lesbian, gay, bisexual, transgender.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span>To safeguard and advance the civil rights of lesbians, gay men, bi
+                                                    transgender people and those with...and suicide prevention services to
+                                                    lesbian, gay, bisexual, transgender, and questioning youth.</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="niceCheck" id="ch8">
+                                            <div class="label">
+                                                <div>
+                                                    YOU CAN PLAY
+                                                    <div class="tooltip">
+                                                        <div>
+                                                            <div class="tooltip__close" title="close"></div>
+                                                            <img src="pic/tooltip-logo.png" alt="">
+                                                            <ul class="tooltip__social">
+                                                                <li class="tooltip__social-t">
+                                                                    <a href="https://twitter.com/TrevorProject" class="twitter-follow-button" data-show-count="false">Follow @TrevorProject</a>
+                                                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                                                                </li>
+                                                                <li class="tooltip__social-f">
+                                                                    <div id="fb-root12"></div>
+                                                                    <script>(function(d, s, id) {
+                                                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                                                        if (d.getElementById(id)) return;
+                                                                        js = d.createElement(s); js.id = id;
+                                                                        js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
+                                                                        fjs.parentNode.insertBefore(js, fjs);
+                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                                                    <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
+                                                                </li>
+                                                            </ul>
+                                                            <p>The Trevor Project is the leading national organization
+                                                                providing crisis intervention and suicide prevention
+                                                                services to lesbian, gay, bisexual, transgender.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span>You Can Play is dedicated to ensuring equality, respect and safety
+                                                    for all athletes without regard to sexual orientation.and suicide
+                                                    prevention services to lesbian, gay, bisexual, transgender, and
+                                                    questioning youth.</span>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                    <dt><span>sexism</span></dt>
+                                    <dd>
+                                        <span>Please select the inatitve that you’d like to support.</span>
+                                        <div>
+                                            <input type="checkbox" class="niceCheck" id="ch9">
+                                            <div class="label">
+                                                <div>
+                                                    THE TREVOR PROJECT
+                                                    <div class="tooltip">
+                                                        <div>
+                                                            <div class="tooltip__close" title="close"></div>
+                                                            <img src="pic/tooltip-logo.png" alt="">
+                                                            <ul class="tooltip__social">
+                                                                <li class="tooltip__social-t">
+                                                                    <a href="https://twitter.com/TrevorProject" class="twitter-follow-button" data-show-count="false">Follow @TrevorProject</a>
+                                                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                                                                </li>
+                                                                <li class="tooltip__social-f">
+                                                                    <div id="fb-root11"></div>
+                                                                    <script>(function(d, s, id) {
+                                                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                                                        if (d.getElementById(id)) return;
+                                                                        js = d.createElement(s); js.id = id;
+                                                                        js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
+                                                                        fjs.parentNode.insertBefore(js, fjs);
+                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                                                    <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
+                                                                </li>
+                                                            </ul>
+                                                            <p>The Trevor Project is the leading national organization
+                                                                providing crisis intervention and suicide prevention
+                                                                services to lesbian, gay, bisexual, transgender.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span>The Trevor Project is the leading national organization providing
+                                                    crisis intervention and suicide prevention services to lesbian, gay,
+                                                    bisexual, transgender, and questioning youth.</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="niceCheck" id="ch10">
+                                            <div class="label">
+                                                <div>
+                                                    NOH8
+                                                    <div class="tooltip">
+                                                        <div>
+                                                            <div class="tooltip__close" title="close"></div>
+                                                            <img src="pic/tooltip-logo.png" alt="">
+                                                            <ul class="tooltip__social">
+                                                                <li class="tooltip__social-t">
+                                                                    <a href="https://twitter.com/TrevorProject" class="twitter-follow-button" data-show-count="false">Follow @TrevorProject</a>
+                                                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                                                                </li>
+                                                                <li class="tooltip__social-f">
+                                                                    <div id="fb-root10"></div>
+                                                                    <script>(function(d, s, id) {
+                                                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                                                        if (d.getElementById(id)) return;
+                                                                        js = d.createElement(s); js.id = id;
+                                                                        js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
+                                                                        fjs.parentNode.insertBefore(js, fjs);
+                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                                                    <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
+                                                                </li>
+                                                            </ul>
+                                                            <p>The Trevor Project is the leading national organization
+                                                                providing crisis intervention and suicide prevention
+                                                                services to lesbian, gay, bisexual, transgender.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span>The NOH8 Campaign is a charitable organization whose mission is to
+                                                    promote marriage, gender and human... equality through education,
+                                                    advocacy, social media, and visual protest.and suicide prevention
+                                                    services to lesbian, gay, bisexual, transgender, and questioning
+                                                    youth.</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="niceCheck" id="ch11">
+                                            <div class="label">
+                                                <div>
+                                                    GLSEN
+                                                    <div class="tooltip">
+                                                        <div>
+                                                            <div class="tooltip__close" title="close"></div>
+                                                            <img src="pic/tooltip-logo.png" alt="">
+                                                            <ul class="tooltip__social">
+                                                                <li class="tooltip__social-t">
+                                                                    <a href="https://twitter.com/TrevorProject" class="twitter-follow-button" data-show-count="false">Follow @TrevorProject</a>
+                                                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                                                                </li>
+                                                                <li class="tooltip__social-f">
+                                                                    <div id="fb-root9"></div>
+                                                                    <script>(function(d, s, id) {
+                                                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                                                        if (d.getElementById(id)) return;
+                                                                        js = d.createElement(s); js.id = id;
+                                                                        js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
+                                                                        fjs.parentNode.insertBefore(js, fjs);
+                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                                                    <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
+                                                                </li>
+                                                            </ul>
+                                                            <p>The Trevor Project is the leading national organization
+                                                                providing crisis intervention and suicide prevention
+                                                                services to lesbian, gay, bisexual, transgender.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span>To safeguard and advance the civil rights of lesbians, gay men, bi
+                                                    transgender people and those with...and suicide prevention services to
+                                                    lesbian, gay, bisexual, transgender, and questioning youth.</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="niceCheck" id="ch12">
+                                            <div class="label">
+                                                <div>
+                                                    YOU CAN PLAY
+                                                    <div class="tooltip">
+                                                        <div>
+                                                            <div class="tooltip__close" title="close"></div>
+                                                            <img src="pic/tooltip-logo.png" alt="">
+                                                            <ul class="tooltip__social">
+                                                                <li class="tooltip__social-t">
+                                                                    <a href="https://twitter.com/TrevorProject" class="twitter-follow-button" data-show-count="false">Follow @TrevorProject</a>
+                                                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                                                                </li>
+                                                                <li class="tooltip__social-f">
+                                                                    <div id="fb-root8"></div>
+                                                                    <script>(function(d, s, id) {
+                                                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                                                        if (d.getElementById(id)) return;
+                                                                        js = d.createElement(s); js.id = id;
+                                                                        js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
+                                                                        fjs.parentNode.insertBefore(js, fjs);
+                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                                                    <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
+                                                                </li>
+                                                            </ul>
+                                                            <p>The Trevor Project is the leading national organization
+                                                                providing crisis intervention and suicide prevention
+                                                                services to lesbian, gay, bisexual, transgender.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span>You Can Play is dedicated to ensuring equality, respect and safety
+                                                    for all athletes without regard to sexual orientation.and suicide
+                                                    prevention services to lesbian, gay, bisexual, transgender, and
+                                                    questioning youth.</span>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                    <dt><span>disableism</span></dt>
+                                    <dd>
+                                        <span>Please select the inatitve that you’d like to support.</span>
+                                        <div>
+                                            <input type="checkbox" class="niceCheck" id="ch13">
+                                            <div class="label">
+                                                <div>
+                                                    THE TREVOR PROJECT
+                                                    <div class="tooltip">
+                                                        <div>
+                                                            <div class="tooltip__close" title="close"></div>
+                                                            <img src="pic/tooltip-logo.png" alt="">
+                                                            <ul class="tooltip__social">
+                                                                <li class="tooltip__social-t">
+                                                                    <a href="https://twitter.com/TrevorProject" class="twitter-follow-button" data-show-count="false">Follow @TrevorProject</a>
+                                                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                                                                </li>
+                                                                <li class="tooltip__social-f">
+                                                                    <div id="fb-root7"></div>
+                                                                    <script>(function(d, s, id) {
+                                                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                                                        if (d.getElementById(id)) return;
+                                                                        js = d.createElement(s); js.id = id;
+                                                                        js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
+                                                                        fjs.parentNode.insertBefore(js, fjs);
+                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                                                    <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
+                                                                </li>
+                                                            </ul>
+                                                            <p>The Trevor Project is the leading national organization
+                                                                providing crisis intervention and suicide prevention
+                                                                services to lesbian, gay, bisexual, transgender.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span>The Trevor Project is the leading national organization providing
+                                                    crisis intervention and suicide prevention services to lesbian, gay,
+                                                    bisexual, transgender, and questioning youth.</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="niceCheck" id="ch14">
+                                            <div class="label">
+                                                <div>
+                                                    NOH8
+                                                    <div class="tooltip">
+                                                        <div>
+                                                            <div class="tooltip__close" title="close"></div>
+                                                            <img src="pic/tooltip-logo.png" alt="">
+                                                            <ul class="tooltip__social">
+                                                                <li class="tooltip__social-t">
+                                                                    <a href="https://twitter.com/TrevorProject" class="twitter-follow-button" data-show-count="false">Follow @TrevorProject</a>
+                                                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                                                                </li>
+                                                                <li class="tooltip__social-f">
+                                                                    <div id="fb-root6"></div>
+                                                                    <script>(function(d, s, id) {
+                                                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                                                        if (d.getElementById(id)) return;
+                                                                        js = d.createElement(s); js.id = id;
+                                                                        js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
+                                                                        fjs.parentNode.insertBefore(js, fjs);
+                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                                                    <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
+                                                                </li>
+                                                            </ul>
+                                                            <p>The Trevor Project is the leading national organization
+                                                                providing crisis intervention and suicide prevention
+                                                                services to lesbian, gay, bisexual, transgender.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span>The NOH8 Campaign is a charitable organization whose mission is to
+                                                    promote marriage, gender and human... equality through education,
+                                                    advocacy, social media, and visual protest.and suicide prevention
+                                                    services to lesbian, gay, bisexual, transgender, and questioning
+                                                    youth.</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="niceCheck" id="ch15">
+                                            <div class="label">
+                                                <div>
+                                                    GLSEN
+                                                    <div class="tooltip">
+                                                        <div>
+                                                            <div class="tooltip__close" title="close"></div>
+                                                            <img src="pic/tooltip-logo.png" alt="">
+                                                            <ul class="tooltip__social">
+                                                                <li class="tooltip__social-t">
+                                                                    <a href="https://twitter.com/TrevorProject" class="twitter-follow-button" data-show-count="false">Follow @TrevorProject</a>
+                                                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                                                                </li>
+                                                                <li class="tooltip__social-f">
+                                                                    <div id="fb-root5"></div>
+                                                                    <script>(function(d, s, id) {
+                                                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                                                        if (d.getElementById(id)) return;
+                                                                        js = d.createElement(s); js.id = id;
+                                                                        js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
+                                                                        fjs.parentNode.insertBefore(js, fjs);
+                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                                                    <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
+                                                                </li>
+                                                            </ul>
+                                                            <p>The Trevor Project is the leading national organization
+                                                                providing crisis intervention and suicide prevention
+                                                                services to lesbian, gay, bisexual, transgender.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span>To safeguard and advance the civil rights of lesbians, gay men, bi
+                                                    transgender people and those with...and suicide prevention services to
+                                                    lesbian, gay, bisexual, transgender, and questioning youth.</span>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <input type="checkbox" class="niceCheck" id="ch16">
+                                            <div class="label">
+                                                <div>
+                                                    YOU CAN PLAY
+                                                    <div class="tooltip">
+                                                        <div>
+                                                            <div class="tooltip__close" title="close"></div>
+                                                            <img src="pic/tooltip-logo.png" alt="">
+                                                            <ul class="tooltip__social">
+                                                                <li class="tooltip__social-t">
+                                                                    <a href="https://twitter.com/TrevorProject" class="twitter-follow-button" data-show-count="false">Follow @TrevorProject</a>
+                                                                    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                                                                </li>
+                                                                <li class="tooltip__social-f">
+                                                                    <div id="fb-root4"></div>
+                                                                    <script>(function(d, s, id) {
+                                                                        var js, fjs = d.getElementsByTagName(s)[0];
+                                                                        if (d.getElementById(id)) return;
+                                                                        js = d.createElement(s); js.id = id;
+                                                                        js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
+                                                                        fjs.parentNode.insertBefore(js, fjs);
+                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                                                    <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
+                                                                </li>
+                                                            </ul>
+                                                            <p>The Trevor Project is the leading national organization
+                                                                providing crisis intervention and suicide prevention
+                                                                services to lesbian, gay, bisexual, transgender.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <span>You Can Play is dedicated to ensuring equality, respect and safety
+                                                    for all athletes without regard to sexual orientation.and suicide
+                                                    prevention services to lesbian, gay, bisexual, transgender, and
+                                                    questioning youth.</span>
+                                            </div>
+                                        </div>
+                                    </dd>
+                                </dl>
+                                <!-- /tabs -->
+
+                                <!-- donate__check-all -->
+                                <div class="donate__check-all">
+                                    <input type="checkbox" class="niceCheck" id="ch17">
+                                    <div class="label">
+                                        <div>
+                                            BEYOND “it”
+                                            <div class="tooltip">
+                                                <div>
+                                                    <div class="tooltip__close" title="close"></div>
+                                                    <img src="pic/tooltip-logo.png" alt="">
+                                                    <ul class="tooltip__social">
+                                                        <li class="tooltip__social-t">
+                                                            <a href="https://twitter.com/TrevorProject" class="twitter-follow-button" data-show-count="false">Follow @TrevorProject</a>
+                                                            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                                                        </li>
+                                                        <li class="tooltip__social-f">
+                                                            <div id="fb-root3"></div>
+                                                            <script>(function(d, s, id) {
+                                                                var js, fjs = d.getElementsByTagName(s)[0];
+                                                                if (d.getElementById(id)) return;
+                                                                js = d.createElement(s); js.id = id;
+                                                                js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
+                                                                fjs.parentNode.insertBefore(js, fjs);
+                                                            }(document, 'script', 'facebook-jssdk'));</script>
+                                                            <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
+                                                        </li>
+                                                    </ul>
+                                                    <p>The Trevor Project is the leading national organization
+                                                        providing crisis intervention and suicide prevention
+                                                        services to lesbian, gay, bisexual, transgender.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <span>BEYOND “it” will donate equally to all partner initatives.</span>
+                                    </div>
+                                </div>
+                                <!-- /donate__check-all -->
+
+                                <!-- donate__add-info -->
+                                <div class="donate__add-info">
+                                    <p>50% is a charitable gift that will be donated directly to your chosen intiative.</p>
+                                    <p>50% is a non-tax deductible contribution that will go towards
+                                        <a href="#">BEYOND “it” and its mission.</a></p>
+                                </div>
+                                <!-- /donate__add-info -->
+
+                            </div>
+                            <div>
+                                <h2>CHOOSE YOUR DONATION & GIFT <sup>USD</sup></h2>
+                                <ul class="statement__donate-list">
+                                    <li>
+                                        <div class="statement__donate-gift">
+                                            <div>
+                                                <input type="checkbox" class="niceCheck" id="ch27">
+                                                <span class="statement__donate-price">
+                                                    $2
+                                                    <span>
+                                                        Roll over to see gift
+                                                        <span class="over">
+                                                            <span>Digital Statement of Support</span>
+                                                            <span>+ Autographed Robbie Rogers Photo</span>
+                                                            <a href="#">SELECT</a>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="statement__donate-gift">
+                                            <div>
+                                                <input type="checkbox" class="niceCheck" id="ch26">
+                                                <span class="statement__donate-price">
+                                                    $10
+                                                    <span>
+                                                        Roll over to see gift
+                                                        <span class="over">
+                                                            <span>Digital Statement of Support</span>
+                                                            <span>+ Autographed Robbie Rogers Photo</span>
+                                                            <a href="#">SELECT</a>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="statement__donate-gift">
+                                            <div>
+                                                <input type="checkbox" class="niceCheck" id="ch25">
+                                                <span class="statement__donate-price">
+                                                    $50
+                                                    <span>
+                                                        Roll over to see gift
+                                                        <span class="over">
+                                                            <span>Digital Statement of Support</span>
+                                                            <span>+ Autographed Robbie Rogers Photo</span>
+                                                            <a href="#">SELECT</a>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="statement__donate-gift">
+                                            <div>
+                                                <input type="checkbox" class="niceCheck" id="ch24">
+                                                <span class="statement__donate-price">
+                                                    $100
+                                                    <span>
+                                                        Roll over to see gift
+                                                        <span class="over">
+                                                            <span>Digital Statement of Support</span>
+                                                            <span>+ Autographed Robbie Rogers Photo</span>
+                                                            <a href="#">SELECT</a>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="statement__donate-gift">
+                                            <div>
+                                                <input type="checkbox" class="niceCheck" id="ch22">
+                                                <span class="statement__donate-price">
+                                                    $500
+                                                    <span>
+                                                        Roll over to see gift
+                                                        <span class="over">
+                                                            <span>Digital Statement of Support</span>
+                                                            <span>+ Autographed Robbie Rogers Photo</span>
+                                                            <a href="#">SELECT</a>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="statement__donate-gift">
+                                            <div>
+                                                <input type="checkbox" class="niceCheck" id="ch23">
+                                                <span class="statement__donate-price">
+                                                    $1000
+                                                    <span>
+                                                        Roll over to see gift
+                                                        <span class="over">
+                                                            <span>Digital Statement of Support</span>
+                                                            <span>+ Autographed Robbie Rogers Photo</span>
+                                                            <a href="#">SELECT</a>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="statement__donate-gift">
+                                            <div>
+                                                <input type="checkbox" class="niceCheck" id="ch21">
+                                                <span class="statement__donate-price">
+                                                    <span class="statement__donate-self">
+                                                        Larger than $1,000
+                                                        <input type="text" id="donate_price" placeholder="OTHER">
+                                                    </span>
+                                                    <span>
+                                                        Roll over to see gift
+                                                        <span class="over">
+                                                            <span>Digital Statement of Support</span>
+                                                            <span>+ Autographed Robbie Rogers Photo</span>
+                                                            <a href="#">SELECT</a>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </div>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <input type="checkbox" class="niceCheck" id="ch19">
+                                            <label for="ch19">I can’t make a donation right now, but I want to help spread the word!</label>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="support">
+                                    <input type="checkbox" class="niceCheck niceCheck2" id="ch20">
+                                    <select id="suppot__select">
+                                        <option value="IN SUPPORT OF" selected>IN SUPPORT OF</option>
+                                        <option value="IN SUPPORT OF2">IN SUPPORT OF2</option>
+                                        <option value="IN SUPPORT OF3">IN SUPPORT OF3</option>
+                                    </select>
+                                    <input type="text" placeholder="Name" class="support__name" id="suppot__name">
+                                </div>
+                                <button class="donate__next">NEXT</button>
                             </div>
                             <span class="statement__donate-back"></span>
                         </dd>
@@ -200,8 +1031,8 @@
                             <div>SHARE</div>
                             <span>Invite your friends to move BEYOND “it”</span>
                         </dt>
-                        <dd>
-
+                        <dd class="statement__share">
+                            <span class="statement__share-back"></span>
                         </dd>
                     </dl>
                     <!-- /statement -->

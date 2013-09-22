@@ -5,7 +5,11 @@ $( function(){
     $( '.tabs' ).each( function(){
         new Tabs( $( this ) );
     } );
+    $( '.tooltip' ).each( function(){
+        new Tooltip( $( this ) );
+    } );
     new Statement();
+
 } );
 
 $( window ).load( function(){
@@ -271,16 +275,102 @@ Tabs.prototype = {
     }
 };
 
+var Tooltip = function( obj ){
+    this.obj = obj;
+    this.body = $( 'body' );
+    this.content = this.obj.find( '> div');
+    this.close = this.obj.find( '.tooltip__close');
+
+    this.init();
+};
+Tooltip.prototype = {
+    init: function(){
+        var self = this;
+
+        self.core = self.core();
+        self.core.controls();
+    },
+    core: function(){
+        var self = this;
+
+        return {
+            controls: function(){
+                self.obj.on( {
+                    'click': function( event ){
+                        event = event || window.event;
+
+                        if (event.stopPropagation) {
+                            event.stopPropagation()
+                        } else {
+                            event.cancelBubble = true
+                        }
+                        self.core.show();
+                    }
+                } );
+                self.content.on( {
+                    'click': function( event ){
+                        event = event || window.event;
+
+                        if (event.stopPropagation) {
+                            event.stopPropagation()
+                        } else {
+                            event.cancelBubble = true
+                        }
+                    }
+                } );
+                self.body.on( {
+                    'click': function( event ){
+                        self.core.hide();
+                    }
+                } );
+                self.close.on( {
+                    'click': function( event ){
+                        self.core.hide();
+                    }
+                } );
+            },
+            show: function(){
+                self.obj.parents( '.donate__check-all' ).css( { zIndex: 100 } ) ;
+                self.obj.parents( '.label').parent().css( { zIndex: 100 } ) ;
+                self.content.css( {
+                    display: 'block',
+                    opacity: 0
+                } );
+                self.content.stop( true, false ).animate( {
+                    opacity: 1,
+                    left: -50
+                }, 500 );
+            },
+            hide: function(){
+                self.obj.parents( '.donate__check-all' ).css( { zIndex: 0 } ) ;
+                self.obj.parents( '.label').parent().css( { zIndex: 0 } ) ;
+                self.content.stop( true, false ).animate( {
+                    opacity: 0
+                }, 300, function(){
+                    $( this ).css( { display: 'none', left: 0 } );
+                } );
+            }
+        };
+    }
+};
+
 var Statement = function(){
     this.obj = $( '.statement' );
+    this.parent = this.obj.parents( '.popup__statement' );
+    this.prov = false;
     this.elems = {
         statementPhotos: this.obj.find( '.statement__photo li' ),
         statementLogo: this.obj.find( '.statement__logo li' ),
         statementNameSocial: this.obj.find( '.statement__name li' ),
         createNext: this.obj.find( '.statement__next' ),
+        donateNext: this.obj.find( '.donate__next' ),
         content: this.obj.find( '> dd' ),
         titles: this.obj.find( '> dt' ),
-        donateBack: this.obj.find( '.statement__donate-back' )
+        doneteCheckBox: this.obj.find( '.tabs input[ type="checkbox" ]' ),
+        doneteCheckAll: this.obj.find( '.donate__check-all input[ type="checkbox" ]' ),
+        donateBack: this.obj.find( '.statement__donate-back' ),
+        shareBack: this.obj.find( '.statement__share-back' ),
+        over: this.obj.find( '.over' )
     };
 
     this.init();
@@ -338,6 +428,16 @@ Statement.prototype = {
                         elems.titles.eq( 1 ).addClass( 'statement__selected' );
                     }
                 } );
+                elems.donateNext.on( {
+                    'click': function(){
+                        var curBlock = elems.content.eq( 1 ),
+                            newBlock = elems.content.eq( 2 );
+
+                        self.core.slideNext( curBlock, newBlock );
+                        $( '.statement__selected' ).removeClass( 'statement__selected' );
+                        elems.titles.eq( 2 ).addClass( 'statement__selected' );
+                    }
+                } );
                 elems.donateBack.on( {
                     'click': function(){
                         var curBlock = elems.content.eq( 1 ),
@@ -348,8 +448,68 @@ Statement.prototype = {
                         elems.titles.eq( 0 ).addClass( 'statement__selected' );
                     }
                 } );
+                elems.shareBack.on( {
+                    'click': function(){
+                        var curBlock = elems.content.eq( 2 ),
+                            newBlock = elems.content.eq( 1 );
+
+                        self.core.slideBack( curBlock, newBlock );
+                        $( '.statement__selected' ).removeClass( 'statement__selected' );
+                        elems.titles.eq( 1 ).addClass( 'statement__selected' );
+                    }
+                } );
+                elems.doneteCheckBox.on( {
+                    'change': function(){
+                        var curItem = $( this );
+
+                        if ( !self.prov ) {
+                            if( curItem.attr( 'checked' ) == undefined ) {
+                                if( elems.doneteCheckAll.attr( 'checked' ) == 'checked' ) {
+                                    elems.doneteCheckAll.parent().trigger( 'click' );
+                                }
+                            } else {
+                                var prov = true;
+
+                                elems.doneteCheckBox.each( function(){
+                                    if( $( this ).attr( 'checked' ) == undefined ) {
+                                        prov = false;
+                                        return false;
+                                    }
+                                } );
+
+                                if ( prov ){
+                                    elems.doneteCheckAll.parent().trigger( 'click' );
+                                }
+                            }
+                        }
+                    }
+                } );
+                elems.doneteCheckAll.on( {
+                    'change': function(){
+                        var curItem = $( this );
+
+                        self.prov = true;
+
+                        if( curItem.attr( 'checked' ) == 'checked' ) {
+                            elems.doneteCheckBox.each( function(){
+                                if( $( this ).attr( 'checked' ) == undefined ) {
+                                    $( this ).parent().trigger( 'click' );
+                                }
+                            } );
+                        }
+
+                        self.prov = false;
+                    }
+                } );
+                elems.over.on( {
+                    'click': function(){
+                        $( this ).parents( 'li' ).find( '.niceCheck' ).trigger( 'click' );
+                    }
+                } );
             },
             slideBack: function( curBlock, newBlock ){
+                self.parent.css( { overflow: 'hidden' } );
+
                 newBlock.css( {
                     left: -1011
                 } );
@@ -358,9 +518,14 @@ Statement.prototype = {
                 }, 500, 'easeInOutQuint' );
                 newBlock.animate( {
                     left: 10
-                }, 500, 'easeInOutQuint' );
+                }, 500, 'easeInOutQuint', function(){
+                    self.parent.css( { overflow: 'visible' } );
+                    curBlock.css( { left: -10000 } );
+                } );
             },
             slideNext: function( curBlock, newBlock ){
+                self.parent.css( { overflow: 'hidden' } );
+
                 newBlock.css( {
                     left: 1011
                 } );
@@ -369,7 +534,10 @@ Statement.prototype = {
                 }, 500, 'easeInOutQuint' );
                 newBlock.animate( {
                     left: 10
-                }, 500, 'easeInOutQuint' );
+                }, 500, 'easeInOutQuint', function(){
+                    self.parent.css( { overflow: 'visible' } );
+                    curBlock.css( { left: -10000 } );
+                } );
             }
         };
     }
