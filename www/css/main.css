@@ -1175,4 +1175,37 @@ a:visited {
     left: 21px;
     cursor: pointer;
 }
+.statement__donate {
+    counter-reset: list2;
+}
+.statement__donate > div{
+    display: inline-block;
+    vertical-align: top;
+}
+.statement__donate > div:first-child {
+    width: 494px;
+}
+.statement__donate > div > h2{
+    color: #000;
+    counter-increment: list2;
+    font-size: 27px;
+    font-weight: normal;
+    position: relative;
+    margin-bottom: 5px;
+}
+.statement__donate > div > h2:before {
+    content: counter( list2 );
+    display: inline-block;
+    margin: 2px 3px 0 0;
+    vertical-align: top;
+    width: 24px;
+    font-size: 15px;
+    height: 24px;
+    border-radius: 24px;
+    background: #000;
+    color: #fff;
+    font-family: "komikax";
+    line-height: 21px;
+    text-align: center;
+}
 /* --------------- /statement --------------- */
