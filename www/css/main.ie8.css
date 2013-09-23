@@ -10,6 +10,9 @@
 .gallery__wrap {
     overflow: auto;
 }
+.cards {
+    overflow-y: auto;
+}
 .gallery__filter dd { filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50); }
 .gallery__filter dd.active, .gallery__filter dd:hover, .gallery__item > div:hover > span { filter:progid:DXImageTransform.Microsoft.Alpha(opacity=100); }
 .gallery__item > div > span{ filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0); }

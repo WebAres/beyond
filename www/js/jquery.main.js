@@ -1,14 +1,15 @@
 var loader;
 $( function(){
     loader = new Loader();
-    new Popup();
+    var statement = new Statement();
+    new Popup( statement );
     $( '.tabs' ).each( function(){
         new Tabs( $( this ) );
     } );
     $( '.tooltip' ).each( function(){
         new Tooltip( $( this ) );
     } );
-    new Statement();
+
 
 } );
 
@@ -120,8 +121,9 @@ Gallery.prototype = {
     }
 };
 
-var Popup =  function(){
+var Popup =  function( statement ){
     this.btns = $( '.menu > div' );
+    this.statement = statement;
     this.popups = $( '.popup' );
     this.animationSpeed = 300;
     this.btnClose = $( '.popup__close' );
@@ -200,6 +202,7 @@ Popup.prototype = {
                     top: 50,
                     opacity: 1
                 }, self.animationSpeed );
+                self.statement.scroll.refresh();
             },
             switchPopup: function( oldIndex, newIndex ){
                 var oldPopup = self.popups.eq( oldIndex ),
@@ -212,6 +215,7 @@ Popup.prototype = {
                 } );
                 oldPopup.stop( true, false ).fadeOut( self.animationSpeed );
                 newPopup.stop( true, false ).fadeIn( self.animationSpeed );
+                self.statement.scroll.refresh();
             },
             hidePopup: function( index ){
                 var curPopup = self.popups.eq( index );
@@ -381,6 +385,11 @@ Statement.prototype = {
 
         self.core = self.core();
         self.core.controls();
+
+        if( !self.ie8 ){
+            self.scroll = new IScroll( '#cards' , { mouseWheel: true } );
+            self.scroll.refresh();
+        }
     },
     core: function(){
         var self = this,
