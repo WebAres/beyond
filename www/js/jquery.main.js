@@ -10,6 +10,17 @@ $( function(){
         new Tooltip( $( this ) );
     } );
 
+    $('#countdown_dashboard').countDown({
+        targetDate: {
+            'day': 		10,
+            'month': 	1,
+            'year': 	2014,
+            'hour': 	11,
+            'min': 		0,
+            'sec': 		0
+        }
+    });
+
 
 } );
 

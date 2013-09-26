@@ -26,10 +26,9 @@ var NiceCheck = function( obj ){
 
                     self.parent = self.obj.parent();
                     self.label = self.parent.find( 'label' );
+                    self.label2 = self.parent.find( '.label' );
 
                     self.label.removeAttr( 'for' );
-
-                    console.log(self.obj.attr( 'class' ))
 
                     self.obj.wrap( '<span class="' + self.obj.attr( 'class' ) + '"></span>' );
 
@@ -60,6 +59,21 @@ var NiceCheck = function( obj ){
                     self.obj.trigger( 'change' );
                 },
                 controls: function(){
+                    self.label.on( {
+                        'click': function(){
+                            if ( !self.checkDisabled ) {
+                                self.core.change();
+                            }
+                        }
+                    } );
+                    self.label2.on( {
+                        'click': function(){
+                            console.log(1)
+                            if ( !self.checkDisabled ) {
+                                self.core.change();
+                            }
+                        }
+                    } );
                     self.label.on( {
                         'click': function(){
                             if ( !self.checkDisabled ) {
