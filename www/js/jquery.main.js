@@ -374,6 +374,7 @@ var Statement = function(){
     this.parent = this.obj.parents( '.popup__statement' );
     this.prov = false;
     this.elems = {
+        statementLoadPhoto: this.obj.find( '.uploadx' ),
         statementBackground: this.obj.find( '#statement__background' ),
         statementLabel: this.obj.find( '#statement__label' ),
         statementIdentify: this.obj.find( '#statement__identify' ),
@@ -550,6 +551,28 @@ Statement.prototype = {
                         $( this ).parents( 'li' ).find( '.niceCheck' ).trigger( 'click' );
                     }
                 } );
+                self.uploader = new qq.FileUploader({
+                    element: elems.statementLoadPhoto[0],
+                    action: elems.statementLoadPhoto.attr( 'data-php' ),
+                    params: {},
+                    allowedExtensions: elems.statementLoadPhoto.attr('data-ext').split(','),
+                    sizeLimit: 0,
+                    minSizeLimit: 0,
+                    debug: false,
+                    fileNum: 0,
+                    uploaded: 2,
+                    maxConnections: 10,
+                    onSubmit: function( id, fileName ){
+                    },
+                    onProgress: function( id, fileName, loaded, total ){
+                    },
+                    onComplete: function(id, fileName, responseJSON){
+                        console.log(id, fileName, responseJSON)
+                    },
+                    onCancel: function(id, fileName){},
+                    messages: {},
+                    showMessage: function(message){ alert(message);}
+                });
             },
             slideBack: function( curBlock, newBlock ){
                 self.parent.css( { overflow: 'hidden' } );

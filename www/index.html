@@ -14,6 +14,7 @@
     <script src="js/jquery.checkbox.js"></script>
     <script src="js/jquery.select.js"></script>
     <script src="js/iscroll-min.js"></script>
+    <script src="js/fileuploader.js"></script>
     <script src="js/jquery.lwtCountdown-1.0.js"></script>
     <script src="js/jquery.main.js"></script>
 
@@ -57,14 +58,15 @@
                     </dd>
                     <dd class="header__social-f">
                         <div id="fb-root"></div>
-                        <script>(function(d, s, id) {
-                                var js, fjs = d.getElementsByTagName(s)[0];
-                                if (d.getElementById(id)) return;
-                                js = d.createElement(s); js.id = id;
-                                js.src = "//connect.facebook.net/en_EN/all.js#xfbml=1";
-                                fjs.parentNode.insertBefore(js, fjs);
-                            }(document, 'script', 'facebook-jssdk'));
-                            $( '.header__social-f' ).append( '<div class="fb-like" data-href="' + document.location.href + '" data-width="450" data-layout="button_count" data-show-faces="false" data-send="false"></div>' );
+                        <script>
+//                            (function(d, s, id) {
+//                                var js, fjs = d.getElementsByTagName(s)[0];
+//                                if (d.getElementById(id)) return;
+//                                js = d.createElement(s); js.id = id;
+//                                js.src = "//connect.facebook.net/en_EN/all.js#xfbml=1";
+//                                fjs.parentNode.insertBefore(js, fjs);
+//                            }(document, 'script', 'facebook-jssdk'));
+//                            $( '.header__social-f' ).append( '<div class="fb-like" data-href="' + document.location.href + '" data-width="450" data-layout="button_count" data-show-faces="false" data-send="false"></div>' );
                         </script>
 
                     </dd>
@@ -98,7 +100,7 @@
 
                                                 <!-- statement__photo-load -->
                                                 <div class="statement__photo-load">
-                                                    <button class="upload">UPLOAD</button>
+                                                    <div class="uploadx" data-php="php/upload2.php" data-ext="png,jpeg,jpg">UPLOAD</div>
                                                     <button class="upload-fasebook">IMPORT FROM</button>
                                                     <button class="upload-tweeter">IMPORT FROM </button>
                                                 </div>
@@ -223,13 +225,13 @@
                                                                 </li>
                                                                 <li class="tooltip__social-f">
                                                                     <div id="fb-root18"></div>
-                                                                    <script>(function(d, s, id) {
-                                                                        var js, fjs = d.getElementsByTagName(s)[0];
-                                                                        if (d.getElementById(id)) return;
-                                                                        js = d.createElement(s); js.id = id;
-                                                                        js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                        fjs.parentNode.insertBefore(js, fjs);
-                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                                                    <!--<script>(function(d, s, id) {-->
+                                                                        <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                        <!--if (d.getElementById(id)) return;-->
+                                                                        <!--js = d.createElement(s); js.id = id;-->
+                                                                        <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                        <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                                    <!--}(document, 'script', 'facebook-jssdk'));</script>-->
                                                                     <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
                                                                 </li>
                                                             </ul>
@@ -260,13 +262,13 @@
                                                                 </li>
                                                                 <li class="tooltip__social-f">
                                                                     <div id="fb-root19"></div>
-                                                                    <script>(function(d, s, id) {
-                                                                        var js, fjs = d.getElementsByTagName(s)[0];
-                                                                        if (d.getElementById(id)) return;
-                                                                        js = d.createElement(s); js.id = id;
-                                                                        js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                        fjs.parentNode.insertBefore(js, fjs);
-                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                                                    <!--<script>(function(d, s, id) {-->
+                                                                        <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                        <!--if (d.getElementById(id)) return;-->
+                                                                        <!--js = d.createElement(s); js.id = id;-->
+                                                                        <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                        <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                                    <!--}(document, 'script', 'facebook-jssdk'));</script>-->
                                                                     <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
                                                                 </li>
                                                             </ul>
@@ -299,13 +301,13 @@
                                                                 </li>
                                                                 <li class="tooltip__social-f">
                                                                     <div id="fb-root17"></div>
-                                                                    <script>(function(d, s, id) {
-                                                                        var js, fjs = d.getElementsByTagName(s)[0];
-                                                                        if (d.getElementById(id)) return;
-                                                                        js = d.createElement(s); js.id = id;
-                                                                        js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                        fjs.parentNode.insertBefore(js, fjs);
-                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                                                    <!--<script>(function(d, s, id) {-->
+                                                                        <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                        <!--if (d.getElementById(id)) return;-->
+                                                                        <!--js = d.createElement(s); js.id = id;-->
+                                                                        <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                        <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                                    <!--}(document, 'script', 'facebook-jssdk'));</script>-->
                                                                     <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
                                                                 </li>
                                                             </ul>
@@ -336,13 +338,13 @@
                                                                 </li>
                                                                 <li class="tooltip__social-f">
                                                                     <div id="fb-root16"></div>
-                                                                    <script>(function(d, s, id) {
-                                                                        var js, fjs = d.getElementsByTagName(s)[0];
-                                                                        if (d.getElementById(id)) return;
-                                                                        js = d.createElement(s); js.id = id;
-                                                                        js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                        fjs.parentNode.insertBefore(js, fjs);
-                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                                                    <!--<script>(function(d, s, id) {-->
+                                                                        <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                        <!--if (d.getElementById(id)) return;-->
+                                                                        <!--js = d.createElement(s); js.id = id;-->
+                                                                        <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                        <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                                    <!--}(document, 'script', 'facebook-jssdk'));</script>-->
                                                                     <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
                                                                 </li>
                                                             </ul>
@@ -378,13 +380,13 @@
                                                                 </li>
                                                                 <li class="tooltip__social-f">
                                                                     <div id="fb-root15"></div>
-                                                                    <script>(function(d, s, id) {
-                                                                        var js, fjs = d.getElementsByTagName(s)[0];
-                                                                        if (d.getElementById(id)) return;
-                                                                        js = d.createElement(s); js.id = id;
-                                                                        js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                        fjs.parentNode.insertBefore(js, fjs);
-                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                                                    <!--<script>(function(d, s, id) {-->
+                                                                        <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                        <!--if (d.getElementById(id)) return;-->
+                                                                        <!--js = d.createElement(s); js.id = id;-->
+                                                                        <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                        <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                                    <!--}(document, 'script', 'facebook-jssdk'));</script>-->
                                                                     <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
                                                                 </li>
                                                             </ul>
@@ -415,13 +417,13 @@
                                                                 </li>
                                                                 <li class="tooltip__social-f">
                                                                     <div id="fb-root14"></div>
-                                                                    <script>(function(d, s, id) {
-                                                                        var js, fjs = d.getElementsByTagName(s)[0];
-                                                                        if (d.getElementById(id)) return;
-                                                                        js = d.createElement(s); js.id = id;
-                                                                        js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                        fjs.parentNode.insertBefore(js, fjs);
-                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                                                    <!--<script>(function(d, s, id) {-->
+                                                                        <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                        <!--if (d.getElementById(id)) return;-->
+                                                                        <!--js = d.createElement(s); js.id = id;-->
+                                                                        <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                        <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                                    <!--}(document, 'script', 'facebook-jssdk'));</script>-->
                                                                     <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
                                                                 </li>
                                                             </ul>
@@ -454,13 +456,13 @@
                                                                 </li>
                                                                 <li class="tooltip__social-f">
                                                                     <div id="fb-root13"></div>
-                                                                    <script>(function(d, s, id) {
-                                                                        var js, fjs = d.getElementsByTagName(s)[0];
-                                                                        if (d.getElementById(id)) return;
-                                                                        js = d.createElement(s); js.id = id;
-                                                                        js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                        fjs.parentNode.insertBefore(js, fjs);
-                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                                                    <!--<script>(function(d, s, id) {-->
+                                                                        <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                        <!--if (d.getElementById(id)) return;-->
+                                                                        <!--js = d.createElement(s); js.id = id;-->
+                                                                        <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                        <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                                    <!--}(document, 'script', 'facebook-jssdk'));</script>-->
                                                                     <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
                                                                 </li>
                                                             </ul>
@@ -491,13 +493,13 @@
                                                                 </li>
                                                                 <li class="tooltip__social-f">
                                                                     <div id="fb-root12"></div>
-                                                                    <script>(function(d, s, id) {
-                                                                        var js, fjs = d.getElementsByTagName(s)[0];
-                                                                        if (d.getElementById(id)) return;
-                                                                        js = d.createElement(s); js.id = id;
-                                                                        js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                        fjs.parentNode.insertBefore(js, fjs);
-                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                                                    <!--<script>(function(d, s, id) {-->
+                                                                        <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                        <!--if (d.getElementById(id)) return;-->
+                                                                        <!--js = d.createElement(s); js.id = id;-->
+                                                                        <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                        <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                                    <!--}(document, 'script', 'facebook-jssdk'));</script>-->
                                                                     <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
                                                                 </li>
                                                             </ul>
@@ -533,13 +535,13 @@
                                                                 </li>
                                                                 <li class="tooltip__social-f">
                                                                     <div id="fb-root11"></div>
-                                                                    <script>(function(d, s, id) {
-                                                                        var js, fjs = d.getElementsByTagName(s)[0];
-                                                                        if (d.getElementById(id)) return;
-                                                                        js = d.createElement(s); js.id = id;
-                                                                        js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                        fjs.parentNode.insertBefore(js, fjs);
-                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                                                    <!--<script>(function(d, s, id) {-->
+                                                                        <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                        <!--if (d.getElementById(id)) return;-->
+                                                                        <!--js = d.createElement(s); js.id = id;-->
+                                                                        <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                        <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                                    <!--}(document, 'script', 'facebook-jssdk'));</script>-->
                                                                     <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
                                                                 </li>
                                                             </ul>
@@ -570,13 +572,13 @@
                                                                 </li>
                                                                 <li class="tooltip__social-f">
                                                                     <div id="fb-root10"></div>
-                                                                    <script>(function(d, s, id) {
-                                                                        var js, fjs = d.getElementsByTagName(s)[0];
-                                                                        if (d.getElementById(id)) return;
-                                                                        js = d.createElement(s); js.id = id;
-                                                                        js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                        fjs.parentNode.insertBefore(js, fjs);
-                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                                                    <!--<script>(function(d, s, id) {-->
+                                                                        <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                        <!--if (d.getElementById(id)) return;-->
+                                                                        <!--js = d.createElement(s); js.id = id;-->
+                                                                        <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                        <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                                    <!--}(document, 'script', 'facebook-jssdk'));</script>-->
                                                                     <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
                                                                 </li>
                                                             </ul>
@@ -609,13 +611,13 @@
                                                                 </li>
                                                                 <li class="tooltip__social-f">
                                                                     <div id="fb-root9"></div>
-                                                                    <script>(function(d, s, id) {
-                                                                        var js, fjs = d.getElementsByTagName(s)[0];
-                                                                        if (d.getElementById(id)) return;
-                                                                        js = d.createElement(s); js.id = id;
-                                                                        js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                        fjs.parentNode.insertBefore(js, fjs);
-                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                                                    <!--<script>(function(d, s, id) {-->
+                                                                        <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                        <!--if (d.getElementById(id)) return;-->
+                                                                        <!--js = d.createElement(s); js.id = id;-->
+                                                                        <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                        <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                                    <!--}(document, 'script', 'facebook-jssdk'));</script>-->
                                                                     <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
                                                                 </li>
                                                             </ul>
@@ -646,13 +648,13 @@
                                                                 </li>
                                                                 <li class="tooltip__social-f">
                                                                     <div id="fb-root8"></div>
-                                                                    <script>(function(d, s, id) {
-                                                                        var js, fjs = d.getElementsByTagName(s)[0];
-                                                                        if (d.getElementById(id)) return;
-                                                                        js = d.createElement(s); js.id = id;
-                                                                        js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                        fjs.parentNode.insertBefore(js, fjs);
-                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                                                    <!--<script>(function(d, s, id) {-->
+                                                                        <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                        <!--if (d.getElementById(id)) return;-->
+                                                                        <!--js = d.createElement(s); js.id = id;-->
+                                                                        <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                        <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                                    <!--}(document, 'script', 'facebook-jssdk'));</script>-->
                                                                     <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
                                                                 </li>
                                                             </ul>
@@ -688,13 +690,13 @@
                                                                 </li>
                                                                 <li class="tooltip__social-f">
                                                                     <div id="fb-root7"></div>
-                                                                    <script>(function(d, s, id) {
-                                                                        var js, fjs = d.getElementsByTagName(s)[0];
-                                                                        if (d.getElementById(id)) return;
-                                                                        js = d.createElement(s); js.id = id;
-                                                                        js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                        fjs.parentNode.insertBefore(js, fjs);
-                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                                                    <!--<script>(function(d, s, id) {-->
+                                                                        <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                        <!--if (d.getElementById(id)) return;-->
+                                                                        <!--js = d.createElement(s); js.id = id;-->
+                                                                        <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                        <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                                    <!--}(document, 'script', 'facebook-jssdk'));</script>-->
                                                                     <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
                                                                 </li>
                                                             </ul>
@@ -725,13 +727,13 @@
                                                                 </li>
                                                                 <li class="tooltip__social-f">
                                                                     <div id="fb-root6"></div>
-                                                                    <script>(function(d, s, id) {
-                                                                        var js, fjs = d.getElementsByTagName(s)[0];
-                                                                        if (d.getElementById(id)) return;
-                                                                        js = d.createElement(s); js.id = id;
-                                                                        js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                        fjs.parentNode.insertBefore(js, fjs);
-                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                                                    <!--<script>(function(d, s, id) {-->
+                                                                        <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                        <!--if (d.getElementById(id)) return;-->
+                                                                        <!--js = d.createElement(s); js.id = id;-->
+                                                                        <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                        <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                                    <!--}(document, 'script', 'facebook-jssdk'));</script>-->
                                                                     <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
                                                                 </li>
                                                             </ul>
@@ -764,13 +766,13 @@
                                                                 </li>
                                                                 <li class="tooltip__social-f">
                                                                     <div id="fb-root5"></div>
-                                                                    <script>(function(d, s, id) {
-                                                                        var js, fjs = d.getElementsByTagName(s)[0];
-                                                                        if (d.getElementById(id)) return;
-                                                                        js = d.createElement(s); js.id = id;
-                                                                        js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                        fjs.parentNode.insertBefore(js, fjs);
-                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                                                    <!--<script>(function(d, s, id) {-->
+                                                                        <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                        <!--if (d.getElementById(id)) return;-->
+                                                                        <!--js = d.createElement(s); js.id = id;-->
+                                                                        <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                        <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                                    <!--}(document, 'script', 'facebook-jssdk'));</script>-->
                                                                     <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
                                                                 </li>
                                                             </ul>
@@ -801,13 +803,13 @@
                                                                 </li>
                                                                 <li class="tooltip__social-f">
                                                                     <div id="fb-root4"></div>
-                                                                    <script>(function(d, s, id) {
-                                                                        var js, fjs = d.getElementsByTagName(s)[0];
-                                                                        if (d.getElementById(id)) return;
-                                                                        js = d.createElement(s); js.id = id;
-                                                                        js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                        fjs.parentNode.insertBefore(js, fjs);
-                                                                    }(document, 'script', 'facebook-jssdk'));</script>
+                                                                    <!--<script>(function(d, s, id) {-->
+                                                                        <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                        <!--if (d.getElementById(id)) return;-->
+                                                                        <!--js = d.createElement(s); js.id = id;-->
+                                                                        <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                        <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                                    <!--}(document, 'script', 'facebook-jssdk'));</script>-->
                                                                     <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
                                                                 </li>
                                                             </ul>
@@ -844,13 +846,13 @@
                                                         </li>
                                                         <li class="tooltip__social-f">
                                                             <div id="fb-root3"></div>
-                                                            <script>(function(d, s, id) {
-                                                                var js, fjs = d.getElementsByTagName(s)[0];
-                                                                if (d.getElementById(id)) return;
-                                                                js = d.createElement(s); js.id = id;
-                                                                js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                fjs.parentNode.insertBefore(js, fjs);
-                                                            }(document, 'script', 'facebook-jssdk'));</script>
+                                                            <!--<script>(function(d, s, id) {-->
+                                                                <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                <!--if (d.getElementById(id)) return;-->
+                                                                <!--js = d.createElement(s); js.id = id;-->
+                                                                <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                            <!--}(document, 'script', 'facebook-jssdk'));</script>-->
                                                             <div class="fb-like" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false"></div>
                                                         </li>
                                                     </ul>
@@ -1106,14 +1108,14 @@
                                                             </li>
                                                             <li class="tooltip__social-f">
                                                                 <div id="fb-root45"></div>
-                                                                <script>(function(d, s, id) {
-                                                                    var js, fjs = d.getElementsByTagName(s)[0];
-                                                                    if (d.getElementById(id)) return;
-                                                                    js = d.createElement(s); js.id = id;
-                                                                    js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                    fjs.parentNode.insertBefore(js, fjs);
-                                                                }(document, 'script', 'facebook-jssdk'));</script>
-                                                                <div class="fb-like fb_edge_widget_with_comment fb_iframe_widget" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false" fb-xfbml-state="rendered"><span style="height: 20px; width: 80px;"><iframe id="f3963183f" name="f1abf88364" scrolling="no" title="Like this content on Facebook." class="fb_ltr" src="http://www.facebook.com/plugins/like.php?api_key=&amp;channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D27%23cb%3Df1300130d8%26domain%3Dbeyond%26origin%3Dhttp%253A%252F%252Fbeyond%252Ff245a96b6c%26relation%3Dparent.parent&amp;colorscheme=light&amp;extended_social_context=false&amp;href=http%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Freference%2Fplugins%2Flike&amp;layout=button_count&amp;locale=en_US&amp;node_type=link&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=450" style="border: none; overflow: hidden; height: 20px; width: 80px;"></iframe></span></div>
+                                                                <!--<script>(function(d, s, id) {-->
+                                                                    <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                    <!--if (d.getElementById(id)) return;-->
+                                                                    <!--js = d.createElement(s); js.id = id;-->
+                                                                    <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                    <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                                <!--}(document, 'script', 'facebook-jssdk'));</script>-->
+
                                                             </li>
                                                         </ul>
                                                         <p>The Trevor Project is the leading national organization
@@ -1143,14 +1145,14 @@
                                                             </li>
                                                             <li class="tooltip__social-f">
                                                                 <div id="fb-root44"></div>
-                                                                <script>(function(d, s, id) {
-                                                                    var js, fjs = d.getElementsByTagName(s)[0];
-                                                                    if (d.getElementById(id)) return;
-                                                                    js = d.createElement(s); js.id = id;
-                                                                    js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                    fjs.parentNode.insertBefore(js, fjs);
-                                                                }(document, 'script', 'facebook-jssdk'));</script>
-                                                                <div class="fb-like fb_edge_widget_with_comment fb_iframe_widget" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false" fb-xfbml-state="rendered"><span style="height: 20px; width: 80px;"><iframe id="f3d869e71c" name="f1a543fc38" scrolling="no" title="Like this content on Facebook." class="fb_ltr" src="http://www.facebook.com/plugins/like.php?api_key=&amp;channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D27%23cb%3Df69d37718%26domain%3Dbeyond%26origin%3Dhttp%253A%252F%252Fbeyond%252Ff245a96b6c%26relation%3Dparent.parent&amp;colorscheme=light&amp;extended_social_context=false&amp;href=http%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Freference%2Fplugins%2Flike&amp;layout=button_count&amp;locale=en_US&amp;node_type=link&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=450" style="border: none; overflow: hidden; height: 20px; width: 80px;"></iframe></span></div>
+                                                                <!--<script>(function(d, s, id) {-->
+                                                                    <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                    <!--if (d.getElementById(id)) return;-->
+                                                                    <!--js = d.createElement(s); js.id = id;-->
+                                                                    <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                    <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                                <!--}(document, 'script', 'facebook-jssdk'));</script>-->
+
                                                             </li>
                                                         </ul>
                                                         <p>The Trevor Project is the leading national organization
@@ -1182,14 +1184,14 @@
                                                             </li>
                                                             <li class="tooltip__social-f">
                                                                 <div id="fb-root43"></div>
-                                                                <script>(function(d, s, id) {
-                                                                    var js, fjs = d.getElementsByTagName(s)[0];
-                                                                    if (d.getElementById(id)) return;
-                                                                    js = d.createElement(s); js.id = id;
-                                                                    js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                    fjs.parentNode.insertBefore(js, fjs);
-                                                                }(document, 'script', 'facebook-jssdk'));</script>
-                                                                <div class="fb-like fb_edge_widget_with_comment fb_iframe_widget" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false" fb-xfbml-state="rendered"><span style="height: 20px; width: 80px;"><iframe id="f16384336c" name="f382e15e4c" scrolling="no" title="Like this content on Facebook." class="fb_ltr" src="http://www.facebook.com/plugins/like.php?api_key=&amp;channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D27%23cb%3Df24aca4528%26domain%3Dbeyond%26origin%3Dhttp%253A%252F%252Fbeyond%252Ff245a96b6c%26relation%3Dparent.parent&amp;colorscheme=light&amp;extended_social_context=false&amp;href=http%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Freference%2Fplugins%2Flike&amp;layout=button_count&amp;locale=en_US&amp;node_type=link&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=450" style="border: none; overflow: hidden; height: 20px; width: 80px;"></iframe></span></div>
+                                                                <!--<script>(function(d, s, id) {-->
+                                                                    <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                    <!--if (d.getElementById(id)) return;-->
+                                                                    <!--js = d.createElement(s); js.id = id;-->
+                                                                    <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                    <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                                <!--}(document, 'script', 'facebook-jssdk'));</script>-->
+
                                                             </li>
                                                         </ul>
                                                         <p>The Trevor Project is the leading national organization
@@ -1219,14 +1221,14 @@
                                                             </li>
                                                             <li class="tooltip__social-f">
                                                                 <div id="fb-root42"></div>
-                                                                <script>(function(d, s, id) {
-                                                                    var js, fjs = d.getElementsByTagName(s)[0];
-                                                                    if (d.getElementById(id)) return;
-                                                                    js = d.createElement(s); js.id = id;
-                                                                    js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                    fjs.parentNode.insertBefore(js, fjs);
-                                                                }(document, 'script', 'facebook-jssdk'));</script>
-                                                                <div class="fb-like fb_edge_widget_with_comment fb_iframe_widget" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false" fb-xfbml-state="rendered"><span style="height: 20px; width: 80px;"><iframe id="f1f31147b" name="f34856bd" scrolling="no" title="Like this content on Facebook." class="fb_ltr" src="http://www.facebook.com/plugins/like.php?api_key=&amp;channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D27%23cb%3Dff647582c%26domain%3Dbeyond%26origin%3Dhttp%253A%252F%252Fbeyond%252Ff245a96b6c%26relation%3Dparent.parent&amp;colorscheme=light&amp;extended_social_context=false&amp;href=http%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Freference%2Fplugins%2Flike&amp;layout=button_count&amp;locale=en_US&amp;node_type=link&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=450" style="border: none; overflow: hidden; height: 20px; width: 80px;"></iframe></span></div>
+                                                                <!--<script>(function(d, s, id) {-->
+                                                                    <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                    <!--if (d.getElementById(id)) return;-->
+                                                                    <!--js = d.createElement(s); js.id = id;-->
+                                                                    <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                    <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                                <!--}(document, 'script', 'facebook-jssdk'));</script>-->
+
                                                             </li>
                                                         </ul>
                                                         <p>The Trevor Project is the leading national organization
@@ -1261,14 +1263,14 @@
                                                             </li>
                                                             <li class="tooltip__social-f">
                                                                 <div id="fb-root41"></div>
-                                                                <script>(function(d, s, id) {
-                                                                    var js, fjs = d.getElementsByTagName(s)[0];
-                                                                    if (d.getElementById(id)) return;
-                                                                    js = d.createElement(s); js.id = id;
-                                                                    js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                    fjs.parentNode.insertBefore(js, fjs);
-                                                                }(document, 'script', 'facebook-jssdk'));</script>
-                                                                <div class="fb-like fb_edge_widget_with_comment fb_iframe_widget" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false" fb-xfbml-state="rendered"><span style="height: 20px; width: 80px;"><iframe id="f280360c48" name="f13214c20c" scrolling="no" title="Like this content on Facebook." class="fb_ltr" src="http://www.facebook.com/plugins/like.php?api_key=&amp;channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D27%23cb%3Dfe61cce0%26domain%3Dbeyond%26origin%3Dhttp%253A%252F%252Fbeyond%252Ff245a96b6c%26relation%3Dparent.parent&amp;colorscheme=light&amp;extended_social_context=false&amp;href=http%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Freference%2Fplugins%2Flike&amp;layout=button_count&amp;locale=en_US&amp;node_type=link&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=450" style="border: none; overflow: hidden; height: 20px; width: 80px;"></iframe></span></div>
+                                                                <!--<script>(function(d, s, id) {-->
+                                                                    <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                    <!--if (d.getElementById(id)) return;-->
+                                                                    <!--js = d.createElement(s); js.id = id;-->
+                                                                    <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                    <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                                <!--}(document, 'script', 'facebook-jssdk'));</script>-->
+
                                                             </li>
                                                         </ul>
                                                         <p>The Trevor Project is the leading national organization
@@ -1298,14 +1300,14 @@
                                                             </li>
                                                             <li class="tooltip__social-f">
                                                                 <div id="fb-root40"></div>
-                                                                <script>(function(d, s, id) {
-                                                                    var js, fjs = d.getElementsByTagName(s)[0];
-                                                                    if (d.getElementById(id)) return;
-                                                                    js = d.createElement(s); js.id = id;
-                                                                    js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                    fjs.parentNode.insertBefore(js, fjs);
-                                                                }(document, 'script', 'facebook-jssdk'));</script>
-                                                                <div class="fb-like fb_edge_widget_with_comment fb_iframe_widget" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false" fb-xfbml-state="rendered"><span style="height: 20px; width: 80px;"><iframe id="f3951c0d4c" name="f3779144ec" scrolling="no" title="Like this content on Facebook." class="fb_ltr" src="http://www.facebook.com/plugins/like.php?api_key=&amp;channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D27%23cb%3Df2f29e564%26domain%3Dbeyond%26origin%3Dhttp%253A%252F%252Fbeyond%252Ff245a96b6c%26relation%3Dparent.parent&amp;colorscheme=light&amp;extended_social_context=false&amp;href=http%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Freference%2Fplugins%2Flike&amp;layout=button_count&amp;locale=en_US&amp;node_type=link&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=450" style="border: none; overflow: hidden; height: 20px; width: 80px;"></iframe></span></div>
+                                                                <!--<script>(function(d, s, id) {-->
+                                                                    <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                    <!--if (d.getElementById(id)) return;-->
+                                                                    <!--js = d.createElement(s); js.id = id;-->
+                                                                    <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                    <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                                <!--}(document, 'script', 'facebook-jssdk'));</script>-->
+
                                                             </li>
                                                         </ul>
                                                         <p>The Trevor Project is the leading national organization
@@ -1337,14 +1339,14 @@
                                                             </li>
                                                             <li class="tooltip__social-f">
                                                                 <div id="fb-root39"></div>
-                                                                <script>(function(d, s, id) {
-                                                                    var js, fjs = d.getElementsByTagName(s)[0];
-                                                                    if (d.getElementById(id)) return;
-                                                                    js = d.createElement(s); js.id = id;
-                                                                    js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                    fjs.parentNode.insertBefore(js, fjs);
-                                                                }(document, 'script', 'facebook-jssdk'));</script>
-                                                                <div class="fb-like fb_edge_widget_with_comment fb_iframe_widget" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false" fb-xfbml-state="rendered"><span style="height: 20px; width: 80px;"><iframe id="f14d34fa74" name="f3228c6ec" scrolling="no" title="Like this content on Facebook." class="fb_ltr" src="http://www.facebook.com/plugins/like.php?api_key=&amp;channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D27%23cb%3Df3c3f7f08c%26domain%3Dbeyond%26origin%3Dhttp%253A%252F%252Fbeyond%252Ff245a96b6c%26relation%3Dparent.parent&amp;colorscheme=light&amp;extended_social_context=false&amp;href=http%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Freference%2Fplugins%2Flike&amp;layout=button_count&amp;locale=en_US&amp;node_type=link&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=450" style="border: none; overflow: hidden; height: 20px; width: 80px;"></iframe></span></div>
+                                                                <!--<script>(function(d, s, id) {-->
+                                                                    <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                    <!--if (d.getElementById(id)) return;-->
+                                                                    <!--js = d.createElement(s); js.id = id;-->
+                                                                    <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                    <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                                <!--}(document, 'script', 'facebook-jssdk'));</script>-->
+
                                                             </li>
                                                         </ul>
                                                         <p>The Trevor Project is the leading national organization
@@ -1374,14 +1376,14 @@
                                                             </li>
                                                             <li class="tooltip__social-f">
                                                                 <div id="fb-root38"></div>
-                                                                <script>(function(d, s, id) {
-                                                                    var js, fjs = d.getElementsByTagName(s)[0];
-                                                                    if (d.getElementById(id)) return;
-                                                                    js = d.createElement(s); js.id = id;
-                                                                    js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                    fjs.parentNode.insertBefore(js, fjs);
-                                                                }(document, 'script', 'facebook-jssdk'));</script>
-                                                                <div class="fb-like fb_edge_widget_with_comment fb_iframe_widget" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false" fb-xfbml-state="rendered"><span style="height: 20px; width: 80px;"><iframe id="f3633a99c" name="f15d773e1" scrolling="no" title="Like this content on Facebook." class="fb_ltr" src="http://www.facebook.com/plugins/like.php?api_key=&amp;channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D27%23cb%3Dfdbea7e88%26domain%3Dbeyond%26origin%3Dhttp%253A%252F%252Fbeyond%252Ff245a96b6c%26relation%3Dparent.parent&amp;colorscheme=light&amp;extended_social_context=false&amp;href=http%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Freference%2Fplugins%2Flike&amp;layout=button_count&amp;locale=en_US&amp;node_type=link&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=450" style="border: none; overflow: hidden; height: 20px; width: 80px;"></iframe></span></div>
+                                                                <!--<script>(function(d, s, id) {-->
+                                                                    <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                    <!--if (d.getElementById(id)) return;-->
+                                                                    <!--js = d.createElement(s); js.id = id;-->
+                                                                    <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                    <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                                <!--}(document, 'script', 'facebook-jssdk'));</script>-->
+
                                                             </li>
                                                         </ul>
                                                         <p>The Trevor Project is the leading national organization
@@ -1416,14 +1418,14 @@
                                                             </li>
                                                             <li class="tooltip__social-f">
                                                                 <div id="fb-root37"></div>
-                                                                <script>(function(d, s, id) {
-                                                                    var js, fjs = d.getElementsByTagName(s)[0];
-                                                                    if (d.getElementById(id)) return;
-                                                                    js = d.createElement(s); js.id = id;
-                                                                    js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                    fjs.parentNode.insertBefore(js, fjs);
-                                                                }(document, 'script', 'facebook-jssdk'));</script>
-                                                                <div class="fb-like fb_edge_widget_with_comment fb_iframe_widget" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false" fb-xfbml-state="rendered"><span style="height: 20px; width: 80px;"><iframe id="f1a5ea9b74" name="f9a232dd" scrolling="no" title="Like this content on Facebook." class="fb_ltr" src="http://www.facebook.com/plugins/like.php?api_key=&amp;channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D27%23cb%3Dfe52c4114%26domain%3Dbeyond%26origin%3Dhttp%253A%252F%252Fbeyond%252Ff245a96b6c%26relation%3Dparent.parent&amp;colorscheme=light&amp;extended_social_context=false&amp;href=http%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Freference%2Fplugins%2Flike&amp;layout=button_count&amp;locale=en_US&amp;node_type=link&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=450" style="border: none; overflow: hidden; height: 20px; width: 80px;"></iframe></span></div>
+                                                                <!--<script>(function(d, s, id) {-->
+                                                                    <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                    <!--if (d.getElementById(id)) return;-->
+                                                                    <!--js = d.createElement(s); js.id = id;-->
+                                                                    <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                    <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                                <!--}(document, 'script', 'facebook-jssdk'));</script>-->
+
                                                             </li>
                                                         </ul>
                                                         <p>The Trevor Project is the leading national organization
@@ -1453,14 +1455,14 @@
                                                             </li>
                                                             <li class="tooltip__social-f">
                                                                 <div id="fb-root36"></div>
-                                                                <script>(function(d, s, id) {
-                                                                    var js, fjs = d.getElementsByTagName(s)[0];
-                                                                    if (d.getElementById(id)) return;
-                                                                    js = d.createElement(s); js.id = id;
-                                                                    js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                    fjs.parentNode.insertBefore(js, fjs);
-                                                                }(document, 'script', 'facebook-jssdk'));</script>
-                                                                <div class="fb-like fb_edge_widget_with_comment fb_iframe_widget" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false" fb-xfbml-state="rendered"><span style="height: 20px; width: 80px;"><iframe id="f1bf00379" name="f19a76ab2c" scrolling="no" title="Like this content on Facebook." class="fb_ltr" src="http://www.facebook.com/plugins/like.php?api_key=&amp;channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D27%23cb%3Df149fb3e88%26domain%3Dbeyond%26origin%3Dhttp%253A%252F%252Fbeyond%252Ff245a96b6c%26relation%3Dparent.parent&amp;colorscheme=light&amp;extended_social_context=false&amp;href=http%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Freference%2Fplugins%2Flike&amp;layout=button_count&amp;locale=en_US&amp;node_type=link&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=450" style="border: none; overflow: hidden; height: 20px; width: 80px;"></iframe></span></div>
+                                                                <!--<script>(function(d, s, id) {-->
+                                                                    <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                    <!--if (d.getElementById(id)) return;-->
+                                                                    <!--js = d.createElement(s); js.id = id;-->
+                                                                    <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                    <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                                <!--}(document, 'script', 'facebook-jssdk'));</script>-->
+
                                                             </li>
                                                         </ul>
                                                         <p>The Trevor Project is the leading national organization
@@ -1492,14 +1494,14 @@
                                                             </li>
                                                             <li class="tooltip__social-f">
                                                                 <div id="fb-root35"></div>
-                                                                <script>(function(d, s, id) {
-                                                                    var js, fjs = d.getElementsByTagName(s)[0];
-                                                                    if (d.getElementById(id)) return;
-                                                                    js = d.createElement(s); js.id = id;
-                                                                    js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                    fjs.parentNode.insertBefore(js, fjs);
-                                                                }(document, 'script', 'facebook-jssdk'));</script>
-                                                                <div class="fb-like fb_edge_widget_with_comment fb_iframe_widget" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false" fb-xfbml-state="rendered"><span style="height: 20px; width: 80px;"><iframe id="f213c55ad4" name="fb67dd9a4" scrolling="no" title="Like this content on Facebook." class="fb_ltr" src="http://www.facebook.com/plugins/like.php?api_key=&amp;channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D27%23cb%3Df12622ddb4%26domain%3Dbeyond%26origin%3Dhttp%253A%252F%252Fbeyond%252Ff245a96b6c%26relation%3Dparent.parent&amp;colorscheme=light&amp;extended_social_context=false&amp;href=http%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Freference%2Fplugins%2Flike&amp;layout=button_count&amp;locale=en_US&amp;node_type=link&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=450" style="border: none; overflow: hidden; height: 20px; width: 80px;"></iframe></span></div>
+                                                                <!--<script>(function(d, s, id) {-->
+                                                                    <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                    <!--if (d.getElementById(id)) return;-->
+                                                                    <!--js = d.createElement(s); js.id = id;-->
+                                                                    <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                    <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                                <!--}(document, 'script', 'facebook-jssdk'));</script>-->
+
                                                             </li>
                                                         </ul>
                                                         <p>The Trevor Project is the leading national organization
@@ -1529,14 +1531,14 @@
                                                             </li>
                                                             <li class="tooltip__social-f">
                                                                 <div id="fb-root34"></div>
-                                                                <script>(function(d, s, id) {
-                                                                    var js, fjs = d.getElementsByTagName(s)[0];
-                                                                    if (d.getElementById(id)) return;
-                                                                    js = d.createElement(s); js.id = id;
-                                                                    js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                    fjs.parentNode.insertBefore(js, fjs);
-                                                                }(document, 'script', 'facebook-jssdk'));</script>
-                                                                <div class="fb-like fb_edge_widget_with_comment fb_iframe_widget" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false" fb-xfbml-state="rendered"><span style="height: 20px; width: 80px;"><iframe id="f1d6a288f8" name="f36f4c3b" scrolling="no" title="Like this content on Facebook." class="fb_ltr" src="http://www.facebook.com/plugins/like.php?api_key=&amp;channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D27%23cb%3Df30a38f34c%26domain%3Dbeyond%26origin%3Dhttp%253A%252F%252Fbeyond%252Ff245a96b6c%26relation%3Dparent.parent&amp;colorscheme=light&amp;extended_social_context=false&amp;href=http%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Freference%2Fplugins%2Flike&amp;layout=button_count&amp;locale=en_US&amp;node_type=link&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=450" style="border: none; overflow: hidden; height: 20px; width: 80px;"></iframe></span></div>
+                                                                <!--<script>(function(d, s, id) {-->
+                                                                    <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                    <!--if (d.getElementById(id)) return;-->
+                                                                    <!--js = d.createElement(s); js.id = id;-->
+                                                                    <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                    <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                                <!--}(document, 'script', 'facebook-jssdk'));</script>-->
+
                                                             </li>
                                                         </ul>
                                                         <p>The Trevor Project is the leading national organization
@@ -1571,14 +1573,14 @@
                                                             </li>
                                                             <li class="tooltip__social-f">
                                                                 <div id="fb-root33"></div>
-                                                                <script>(function(d, s, id) {
-                                                                    var js, fjs = d.getElementsByTagName(s)[0];
-                                                                    if (d.getElementById(id)) return;
-                                                                    js = d.createElement(s); js.id = id;
-                                                                    js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                    fjs.parentNode.insertBefore(js, fjs);
-                                                                }(document, 'script', 'facebook-jssdk'));</script>
-                                                                <div class="fb-like fb_edge_widget_with_comment fb_iframe_widget" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false" fb-xfbml-state="rendered"><span style="height: 20px; width: 80px;"><iframe id="f4c0b063" name="f3bfad13a4" scrolling="no" title="Like this content on Facebook." class="fb_ltr" src="http://www.facebook.com/plugins/like.php?api_key=&amp;channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D27%23cb%3Df36318bebc%26domain%3Dbeyond%26origin%3Dhttp%253A%252F%252Fbeyond%252Ff245a96b6c%26relation%3Dparent.parent&amp;colorscheme=light&amp;extended_social_context=false&amp;href=http%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Freference%2Fplugins%2Flike&amp;layout=button_count&amp;locale=en_US&amp;node_type=link&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=450" style="border: none; overflow: hidden; height: 20px; width: 80px;"></iframe></span></div>
+                                                                <!--<script>(function(d, s, id) {-->
+                                                                    <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                    <!--if (d.getElementById(id)) return;-->
+                                                                    <!--js = d.createElement(s); js.id = id;-->
+                                                                    <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                    <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                                <!--}(document, 'script', 'facebook-jssdk'));</script>-->
+
                                                             </li>
                                                         </ul>
                                                         <p>The Trevor Project is the leading national organization
@@ -1608,14 +1610,14 @@
                                                             </li>
                                                             <li class="tooltip__social-f">
                                                                 <div id="fb-root32"></div>
-                                                                <script>(function(d, s, id) {
-                                                                    var js, fjs = d.getElementsByTagName(s)[0];
-                                                                    if (d.getElementById(id)) return;
-                                                                    js = d.createElement(s); js.id = id;
-                                                                    js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                    fjs.parentNode.insertBefore(js, fjs);
-                                                                }(document, 'script', 'facebook-jssdk'));</script>
-                                                                <div class="fb-like fb_edge_widget_with_comment fb_iframe_widget" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false" fb-xfbml-state="rendered"><span style="height: 20px; width: 80px;"><iframe id="f3782a9668" name="f1111a1e04" scrolling="no" title="Like this content on Facebook." class="fb_ltr" src="http://www.facebook.com/plugins/like.php?api_key=&amp;channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D27%23cb%3Df3397eaa68%26domain%3Dbeyond%26origin%3Dhttp%253A%252F%252Fbeyond%252Ff245a96b6c%26relation%3Dparent.parent&amp;colorscheme=light&amp;extended_social_context=false&amp;href=http%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Freference%2Fplugins%2Flike&amp;layout=button_count&amp;locale=en_US&amp;node_type=link&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=450" style="border: none; overflow: hidden; height: 20px; width: 80px;"></iframe></span></div>
+                                                                <!--<script>(function(d, s, id) {-->
+                                                                    <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                    <!--if (d.getElementById(id)) return;-->
+                                                                    <!--js = d.createElement(s); js.id = id;-->
+                                                                    <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                    <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                                <!--}(document, 'script', 'facebook-jssdk'));</script>-->
+
                                                             </li>
                                                         </ul>
                                                         <p>The Trevor Project is the leading national organization
@@ -1647,14 +1649,14 @@
                                                             </li>
                                                             <li class="tooltip__social-f">
                                                                 <div id="fb-root31"></div>
-                                                                <script>(function(d, s, id) {
-                                                                    var js, fjs = d.getElementsByTagName(s)[0];
-                                                                    if (d.getElementById(id)) return;
-                                                                    js = d.createElement(s); js.id = id;
-                                                                    js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                    fjs.parentNode.insertBefore(js, fjs);
-                                                                }(document, 'script', 'facebook-jssdk'));</script>
-                                                                <div class="fb-like fb_edge_widget_with_comment fb_iframe_widget" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false" fb-xfbml-state="rendered"><span style="height: 20px; width: 80px;"><iframe id="f2da8f39ac" name="f2f54a1258" scrolling="no" title="Like this content on Facebook." class="fb_ltr" src="http://www.facebook.com/plugins/like.php?api_key=&amp;channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D27%23cb%3Df3328aca0c%26domain%3Dbeyond%26origin%3Dhttp%253A%252F%252Fbeyond%252Ff245a96b6c%26relation%3Dparent.parent&amp;colorscheme=light&amp;extended_social_context=false&amp;href=http%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Freference%2Fplugins%2Flike&amp;layout=button_count&amp;locale=en_US&amp;node_type=link&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=450" style="border: none; overflow: hidden; height: 20px; width: 80px;"></iframe></span></div>
+                                                                <!--<script>(function(d, s, id) {-->
+                                                                    <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                    <!--if (d.getElementById(id)) return;-->
+                                                                    <!--js = d.createElement(s); js.id = id;-->
+                                                                    <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                    <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                                <!--}(document, 'script', 'facebook-jssdk'));</script>-->
+
                                                             </li>
                                                         </ul>
                                                         <p>The Trevor Project is the leading national organization
@@ -1684,14 +1686,14 @@
                                                             </li>
                                                             <li class="tooltip__social-f">
                                                                 <div id="fb-root30"></div>
-                                                                <script>(function(d, s, id) {
-                                                                    var js, fjs = d.getElementsByTagName(s)[0];
-                                                                    if (d.getElementById(id)) return;
-                                                                    js = d.createElement(s); js.id = id;
-                                                                    js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";
-                                                                    fjs.parentNode.insertBefore(js, fjs);
-                                                                }(document, 'script', 'facebook-jssdk'));</script>
-                                                                <div class="fb-like fb_edge_widget_with_comment fb_iframe_widget" data-href="http://developers.facebook.com/docs/reference/plugins/like" data-width="450" data-layout="button_count" data-show-faces="true" data-send="false" fb-xfbml-state="rendered"><span style="height: 20px; width: 80px;"><iframe id="f1406be6e4" name="f1e34f99b" scrolling="no" title="Like this content on Facebook." class="fb_ltr" src="http://www.facebook.com/plugins/like.php?api_key=&amp;channel_url=http%3A%2F%2Fstatic.ak.facebook.com%2Fconnect%2Fxd_arbiter.php%3Fversion%3D27%23cb%3Df1138808b%26domain%3Dbeyond%26origin%3Dhttp%253A%252F%252Fbeyond%252Ff245a96b6c%26relation%3Dparent.parent&amp;colorscheme=light&amp;extended_social_context=false&amp;href=http%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Freference%2Fplugins%2Flike&amp;layout=button_count&amp;locale=en_US&amp;node_type=link&amp;sdk=joey&amp;send=false&amp;show_faces=false&amp;width=450" style="border: none; overflow: hidden; height: 20px; width: 80px;"></iframe></span></div>
+                                                                <!--<script>(function(d, s, id) {-->
+                                                                    <!--var js, fjs = d.getElementsByTagName(s)[0];-->
+                                                                    <!--if (d.getElementById(id)) return;-->
+                                                                    <!--js = d.createElement(s); js.id = id;-->
+                                                                    <!--js.src = "//connect.facebook.net/en__EN/all.js#xfbml=1";-->
+                                                                    <!--fjs.parentNode.insertBefore(js, fjs);-->
+                                                                <!--}(document, 'script', 'facebook-jssdk'));</script>-->
+
                                                             </li>
                                                         </ul>
                                                         <p>The Trevor Project is the leading national organization
