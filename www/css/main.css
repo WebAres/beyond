@@ -717,11 +717,11 @@ a:visited {
 .statement > dt:first-child + dd {
     left: 10px;
 }
-.statement__create > div {
+.statement__create > form > div {
     display: inline-block;
     vertical-align: top;
 }
-.statement__create > div:first-child {
+.statement__create  > form > div:first-child {
     padding: 7px 0 0 50px;
     margin-right: 93px;
 }

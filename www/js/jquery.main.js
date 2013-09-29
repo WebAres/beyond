@@ -374,6 +374,11 @@ var Statement = function(){
     this.parent = this.obj.parents( '.popup__statement' );
     this.prov = false;
     this.elems = {
+        statementBackground: this.obj.find( '#statement__background' ),
+        statementLabel: this.obj.find( '#statement__label' ),
+        statementIdentify: this.obj.find( '#statement__identify' ),
+        statementLabelInput: this.obj.find( '.statement__label' ),
+        statementIdentifyInput: this.obj.find( '.statement__identify' ),
         statementPhotos: this.obj.find( '.statement__photo li' ),
         statementLogo: this.obj.find( '.statement__logo li' ),
         statementNameSocial: this.obj.find( '.statement__name li' ),
@@ -414,6 +419,7 @@ Statement.prototype = {
 
                         if( !curItem.hasClass( 'active' ) ) {
                             elems.statementPhotos.removeClass( 'active' );
+                            elems.statementBackground.val( curItem.attr( 'data-pic' ) );
                             curItem.addClass( 'active' );
                         }
                     }
@@ -424,8 +430,26 @@ Statement.prototype = {
 
                         if( !curItem.hasClass( 'active' ) ) {
                             elems.statementLogo.removeClass( 'active' );
+                            elems.statementLabel.val( curItem.attr( 'data-label' ) );
+                            elems.statementIdentify.val( curItem.attr( 'data-identify' ) );
+                            elems.statementIdentifyInput.val( '' );
+                            elems.statementLabelInput.val( '' );
                             curItem.addClass( 'active' );
                         }
+                    }
+                } );
+                elems.statementLabelInput.on( {
+                    'keyup': function(){
+                        elems.statementLogo.removeClass( 'active' );
+                        elems.statementLabel.val( elems.statementLabelInput.val() );
+                        elems.statementIdentify.val( elems.statementIdentifyInput.val() );
+                    }
+                } );
+                elems.statementIdentifyInput.on( {
+                    'keyup': function(){
+                        elems.statementLogo.removeClass( 'active' );
+                        elems.statementLabel.val( elems.statementLabelInput.val() );
+                        elems.statementIdentify.val( elems.statementIdentifyInput.val() );
                     }
                 } );
                 elems.statementNameSocial.on( {
